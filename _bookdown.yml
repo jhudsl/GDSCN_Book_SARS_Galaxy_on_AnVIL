@@ -2,10 +2,19 @@ book_filename: "Course_Name"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
-            "01-intro.Rmd",
-            "02-chapter_of_course.Rmd",
-            "About.Rmd",
-            "References.Rmd"]
+            "01-overview.Rmd",
+            "02-learning-objectives.Rmd",
+            "03-lesson-plan.Rmd",
+            "04-variants.Rmd",
+            "05-sequencing.Rmd",
+            "06-alignments.Rmd",
+            "07-cloud.Rmd",
+            "08-overview-video.Rmd",
+            "09-student-guide.Rmd",
+            "A-register-solutions.Rmd",
+            "B-help.Rmd",
+            "C-galaxy.Rmd",
+            "About.Rmd"]
 new_session: yes
 bibliography: [book.bib, packages.bib]
 delete_merged_file: true
