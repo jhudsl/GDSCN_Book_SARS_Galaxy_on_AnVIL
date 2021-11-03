@@ -1,4 +1,9 @@
+AnVIL
+CoV
 ITCR
+galaxyproject
+GDSCN
+https
 itcrtraining
 ITN
 NCI
