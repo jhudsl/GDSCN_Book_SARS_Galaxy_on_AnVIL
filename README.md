@@ -27,15 +27,13 @@ _This template and guide helps you_:
 
 <!--Delete everything above this line upon using the template-->
 
-# {Course Name}
+# GDSCN Book: SARS with Galaxy on AnVIL 
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml/badge.svg)](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/actions/workflows/render-bookdown.yml)
 
 This course was created from [this GitHub template](https://github.com/jhudsl/DaSL_Course_Template_Bookdown).
 
-You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub. Will look something like: https://jhudatascience.org/{Course_Name}}
-
-If you would like to contribute to this course material, take a look at the [getting started GitHub wiki pages](https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki).
+You can see the rendered course material here: https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL 
 
 ## About this course
 
