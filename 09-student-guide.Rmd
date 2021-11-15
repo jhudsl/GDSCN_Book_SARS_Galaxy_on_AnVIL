@@ -34,7 +34,7 @@ anvil.terra.bio
 
 After logging in, click “View Workspaces”. Select the “Public” tab. In the top search bar type the activity workspace “SARS-CoV-2-Genome”. You can also go directly to the following link: https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome. 
 
-Clone the workspace by clicking the teardrop button (![much-smaller image](resources/images/teardrop.png){#id .class width=25 height=20px}). And selecting “Clone”.
+Clone the workspace by clicking the teardrop button (![teardrop button](resources/images/teardrop.png){#id .class width=25 height=20px}). And selecting “Clone”.
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
@@ -110,7 +110,7 @@ _Now we have some data in our account we can look at it. In this exercise we wil
 
 ### Examining Inputs
 
-Use your mouse and click on the eye icon (<img src="resources/images/eye.png" title="eye button" alt="eye button image" width="25" height="20" />) of the first `fastq` file (**VA_sample_forward_reads.fastq**). In the Main screen you will see something like this:
+Use your mouse and click on the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) of the first `fastq` file (**VA_sample_forward_reads.fastq**). In the Main screen you will see something like this:
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
@@ -147,7 +147,7 @@ In the first drop down menu, make sure it has your first `fastq` file (**VA_samp
 
 The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error. 
 
-Click on the eye icon (<img src="resources/images/eye.png" title="eye button" alt="eye button image" width="25" height="20" />) in the new file in the history “FASTQC on data2 Webpage”. 
+Click on the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) in the new file in the history “FASTQC on data2 Webpage”. 
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
@@ -227,7 +227,7 @@ Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Und
 <!-- leanbuild::include_slide("") -->
 <!-- ``` -->
 
-You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" title="eye button" alt="eye button image" width="25" height="20" />) to open JBrowse. You will need to click on the magnifying glasses to zoom in, but you should see the A,C,G, and Ts and their corresponding colors that make up the SARS-CoV-2 genome!
+You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. You will need to click on the magnifying glasses to zoom in, but you should see the A,C,G, and Ts and their corresponding colors that make up the SARS-CoV-2 genome!
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
@@ -259,7 +259,7 @@ You’ll keep everything the same except the following:
 
 These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”. 
 
-You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" title="eye button" alt="eye button image" width="25" height="20" />) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.
+You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
