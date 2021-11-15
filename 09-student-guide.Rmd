@@ -34,7 +34,7 @@ anvil.terra.bio
 
 After logging in, click “View Workspaces”. Select the “Public” tab. In the top search bar type the activity workspace “SARS-CoV-2-Genome”. You can also go directly to the following link: https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome. 
 
-Clone the workspace by clicking the teardrop button (<img src="resources/images/teardrop.png" title="teardrop button" alt="teardrop button image" width="25" height="20" />). And selecting “Clone”.
+Clone the workspace by clicking the teardrop button (![much-smaller image](resources/images/teardrop.png){#id .class width=25 height=20px}). And selecting “Clone”.
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
