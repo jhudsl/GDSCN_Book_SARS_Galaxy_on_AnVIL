@@ -12,13 +12,13 @@ Make sure you have an AnVIL account (refer to https://jhudatascience.org/AnVIL_B
 
 ### Objectives
 
-This activity will teach you how to:
+This activity will teach you how to use the AnVIL platform to:
 
-1. Get started working on the AnVIL platform
-1. Launch the Galaxy tool on the AnVIL platform
-1. Examine `fastq` data files in Galaxy + AnVIL
-1. Perform an alignment on Galaxy + AnVIL
-1. View the aligned data and reference genomes interactively on Galaxy + AnVIL
+1. Get started working on AnVIL
+1. Launch the Galaxy tool
+1. Examine fastq sequence data files
+1. Align sequence data to a reference genome
+1. View the aligned data and reference genomes interactively
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ You can also follow along with the first ~2 minutes of [this video](https://jhud
 
 Notice the three main sections.
 
-**Tools** - These are all of the bioinformatics tool packages available for you to use. When you use a public Galaxy implementation, they are kept up to date by a team of computer scientists. If you are using your own version of Galaxy you have to do this yourself. Open a couple to get familiar with the subheading categories and then the tools underneath.
+**Tools** - These are all of the bioinformatics tool packages available for you to use.
 
 **The Main Dashboard** - This contains flash messages and posts when you first open Galaxy, but when we are using data this is the main interface area.
 
@@ -207,7 +207,7 @@ Under the “Single or Paired-end reads” ensure the “Paired” option is sel
 <!-- leanbuild::include_slide("") -->
 <!-- ``` -->
 
-The output file is a `BAM` file. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
+The output file is a `BAM` file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
 
 ::: {.fyi}
 QUESTIONS:
