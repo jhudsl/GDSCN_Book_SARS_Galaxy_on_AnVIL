@@ -189,7 +189,7 @@ We will use our two SARs data files, which are ready for alignment.
 **VA_sample_forward_reads.fastq**
 **VA_sample_reverse_reads.fastq**
 
-Now go to GENOMICS ANALYSIS: Mapping and select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 bp so we will use the MEM option. 
+Now go to GENOMICS ANALYSIS: Mapping and select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
 
 <!-- ```{r, echo=FALSE, fig.alt=''} -->
 <!-- leanbuild::include_slide("") -->
