@@ -36,9 +36,9 @@ After logging in, click “View Workspaces”. Select the “Public” tab. In t
 
 Clone the workspace by clicking the teardrop button (![teardrop button](resources/images/teardrop.png){#id .class width=25 height=20px}). And selecting “Clone”.
 
-<!-- ```{r, echo=FALSE, fig.alt=''} -->
-<!-- leanbuild::include_slide("") -->
-<!-- ``` -->
+```{r, echo=FALSE, fig.alt='Screenshot showing the teardrop button. The button has been clicked revealing the "clone" option. The Clone option and the teardrop button are highlighted.'}
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_625")
+```
 
 In the first box, give your Workspace clone a name by adding an underscore (“_”) and your name. For example, “SARS-CoV-2-Genome_Ava_Hoffman”. Next, select the Billing project provided by your instructor. Leave the bottom two boxes as-is and click “CLONE WORKSPACE”.
 
