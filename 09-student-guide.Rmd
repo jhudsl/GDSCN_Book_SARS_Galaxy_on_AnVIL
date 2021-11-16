@@ -192,19 +192,19 @@ We will use our two SARs data files, which are ready for alignment.
 Now go to GENOMICS ANALYSIS: Mapping and select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Tools pane in Galaxy. The "Map with BWA-MEM" link is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_33")
 ```
 
 First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference `fasta` file that you uploaded as the reference. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The "Use a genome from history and build index" is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_41")
 ```
 
 Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files. Leave other options as-is. _You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the execute button_. Click execute.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to "Paired"), first set of reads (set to "VA_sample_forward_reads.fastq"), second set of reads (set to "VA_sample_reverse_reads.fastq"), and the "Execute" button.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_50")
 ```
 
 The output file is a `BAM` file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
@@ -224,13 +224,13 @@ We have aligned our data but it is currently a table of where the reads align. T
 Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Execute”. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to "Use a genome from history"), reference genome (set to "SARS-CoV-2_reference_genome.fasta"), and the "Execute" button.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_61")
 ```
 
 You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. You will need to click on the magnifying glasses to zoom in, but you should see the A,C,G, and Ts and their corresponding colors that make up the SARS-CoV-2 genome!
 
 ```{r, echo=FALSE, fig.alt='Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_72")
 ```
 
 This is interesting, but it doesn’t let us compare the genome to the sample we have. We suspect there may be some differences that indicate our sample is the delta variant. Go back to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Just like before, under "Reference genome to display", ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. 
@@ -238,13 +238,13 @@ This is interesting, but it doesn’t let us compare the genome to the sample we
 This time, we’ll add our alignment data from [Exercise Two](#exercise-two). Click the “+ Insert Track Group” button. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_83")
 ```
 
 Click “+ Insert Annotation Track” to add our alignment data. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_92")
 ```
 
 You’ll keep everything the same except the following:
@@ -254,7 +254,7 @@ You’ll keep everything the same except the following:
 - **Maximum size of BAM chunks**: Add one more zero: 50000000
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse options. The following options are highlighted: Track type (set to "BAM Pileups"), Autogenerate SNP Track (set to "Yes"), and Maximum size of BAM chunks (set to 50000000).'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_99")
 ```
 
 These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”. 
@@ -262,13 +262,13 @@ These arguments tell JBrowse what kind of data we are using, as well as some mem
 You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gfa95c9e4ef_0_20")
 ```
 
 Let’s look at an example mutation in our sample. Type in the reference position “24410” and click “Go”. You should see a bunch of “A”s highlighted in green throughout our sample. The reference sequence (top line) is a “G” but all of the reads are an “A”. This means that our sample is genetically different from the established SARS-CoV-2 reference genome! Researchers often call these single base differences “SNPs” - Single Nucleotide Polymorphisms.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green).'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_109")
 ```
 
 :::{.fyi}
@@ -285,7 +285,7 @@ QUESTIONS:
 It’s possible to make mistakes in the data preparation before we get to the data analysis. Sometimes this happens when the samples are being prepared in the lab and sometimes this happens because the sequencer makes a mistake. This is one reason why quality scores are helpful. With millions of reads of data, it’s more likely that we see a “SNP” that is actually an accident. Multiple copies of the same areas of our data (“read depth”) help us be sure it’s a real SNP. When we compare across lots of aligned reads of the same area, we can determine the actual sequence by consensus. For example, we can be reasonably confident that the “G” at position 1,203 shown below is just a sequencing or lab mistake.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_127")
 ```
 :::
 
@@ -296,17 +296,17 @@ Once you are done with the activity, you’ll need to shut down your Galaxy clou
 Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo:
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_134")
 ```
 
 Next, click on “DELETE ENVIRONMENT OPTIONS”:
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_140")
 ```
 
 Finally, select “Delete everything, including persistent disk”. Make sure you are done with the activity and then click “DELETE”.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted.'}
-leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_23")
+leanbuild::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_146")
 ```
