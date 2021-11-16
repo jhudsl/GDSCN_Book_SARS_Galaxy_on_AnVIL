@@ -1,4 +1,4 @@
-book_filename: "GDSCN Book: SARS with Galaxy on AnVIL"
+book_filename: "GDSCN Book SARS with Galaxy on AnVIL"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
