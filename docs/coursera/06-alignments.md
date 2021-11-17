@@ -1,1 +1,13 @@
 # Alignments
+
+This lecture module introduces the structure of genomic data and how alignments work. It touches on the "shredded book" analogy, demonstrates how short chunks of data can be compared to find variation, and reviews data files needed for alignments, including reference genomes and read data. It also reviews some diverse applications of variant detection made possible via alignment tools.
+
+**Learning Objectives**
+
+1. Learn about data as “reads” & shredded books
+1. Become familiar with reference genomes and alignments
+1. Explore the file structure of genomic data and quality scoring
+
+<iframe src="https://drive.google.com/file/d/1DnqaAZcnY7YOfQmmG7yv-0oAoVEc9Xx6/preview" width="640" height="360" allow="autoplay"></iframe>
+
+You can view and download the Google Slides [here](https://docs.google.com/presentation/d/1SxbYQyzJ19AmTj2ULhkxv9VZTEZjG2xePaVLTN7z52Q/edit?usp=sharing).
