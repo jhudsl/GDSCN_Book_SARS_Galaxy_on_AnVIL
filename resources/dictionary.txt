@@ -18,13 +18,17 @@ ITCR
 itcrtraining
 ITN
 JBrowse
+leanbuild
 Markua
 MEM
 NCI
 Phred
 Polymorphisms
+pre
 proline
+px
 SARs
 UE5
+usegalaxy
 Workspaces
 www
