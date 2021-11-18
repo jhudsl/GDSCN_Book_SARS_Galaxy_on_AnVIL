@@ -2,7 +2,7 @@ book_filename: "GDSCN Book SARS with Galaxy on AnVIL"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/
 rmd_files: ["index.Rmd",
-            "01-overview.Rmd",,
+            "01-overview.Rmd",
             "03-lesson-plan.Rmd",
             "04-variants.Rmd",
             "05-sequencing.Rmd",
