@@ -25,3 +25,4 @@ wrap-up
 register-and-solutions
 help
 galaxy-training-network
+download
