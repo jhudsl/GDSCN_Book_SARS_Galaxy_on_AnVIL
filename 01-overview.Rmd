@@ -10,25 +10,31 @@ There is a growing need for undergraduate students to learn cutting-edge concept
 ## Activity Context
 
 **Course Audience**  
+
 - Undergraduate biology majors
 - Graduate students with less exposure to bioinformatics
 
 **Course Prerequisites**  
+
 - Layman understanding of genetics (understanding of DNA, genes, trait inheritance)
 - Some previous exposure to the central dogma of molecular biology
 
 **Class Type**  
+
 - Lab
 - Computer-based
 
 **Class Size**  
+
 - 1-50
 
 **Lesson Duration**  
+
 - 20-30 minute pre-lab lecture 
 - 3 hour lab for undergraduate students
 - 1 hour lab for graduate students
 - Additional short lecture modules
 
-**Assessment Type**
-Short answer questions at each lab stage
+**Assessment Type**  
+
+- Short answer questions at each lab stage
