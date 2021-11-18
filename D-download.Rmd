@@ -1,0 +1,3 @@
+# Download
+
+Download this entire book as a Microsoft Word and Google Doc compatible `docx` file [here](https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/raw/main/docs/GDSCN-Book-SARS-with-Galaxy-on-AnVIL.docx). If you do so, please remember to check back here for updates!

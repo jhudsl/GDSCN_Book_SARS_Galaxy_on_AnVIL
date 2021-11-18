@@ -13,6 +13,7 @@ rmd_files: ["index.Rmd",
             "A-register-solutions.Rmd",
             "B-help.Rmd",
             "C-galaxy.Rmd",
+            "D-download.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib, packages.bib]
