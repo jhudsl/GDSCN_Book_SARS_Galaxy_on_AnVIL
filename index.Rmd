@@ -8,7 +8,10 @@ biblio-style: apalike
 link-citations: yes
 description: "This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection."
 favicon: assets/dasl_favicon.ico
-output: officedown::rdocx_document
+output:
+    bookdown::word_document2:
+      reference_docx: gdscn-template.docx
+      toc: true
 ---
 
 ```{r include=FALSE}
@@ -18,19 +21,6 @@ knitr::write_bib(c(
 ), "packages.bib")
 ```
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE)
-library(officedown)
-library(officer)
-center_par <- fp_par(
-  text.align = "center",
-  padding = 10,
-  border = fp_border(color = "blue", width = 5)
-)
-```
-
 # About this Book {-}
 
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
-
-here is a boxed note I'd like to render.`r center_par`
