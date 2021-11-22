@@ -23,8 +23,8 @@ knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE)
 library(officedown)
 library(officer)
 center_par <- fp_par(
-  text.align = "center", 
-  padding = 10, 
+  text.align = "center",
+  padding = 10,
   border = fp_border(color = "blue", width = 5)
 )
 ```
