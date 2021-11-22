@@ -10,6 +10,7 @@ description: "This book provides resources for instructors to engage students in
 favicon: assets/dasl_favicon.ico
 output:
     bookdown::word_document2:
+      reference_docx: gdscn-template.docx
       toc: true
 ---
 
