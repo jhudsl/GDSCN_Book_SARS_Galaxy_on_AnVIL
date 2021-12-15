@@ -14,6 +14,7 @@ rmd_files: ["index.Rmd",
             "B-help.Rmd",
             "C-galaxy.Rmd",
             "D-download.Rmd",
+            "E-feedback.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib, packages.bib]
