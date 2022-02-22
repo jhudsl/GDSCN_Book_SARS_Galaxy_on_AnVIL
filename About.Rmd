@@ -49,7 +49,7 @@ devtools::session_info()
 
 <!-- Links -->
 
-[Leanbuild]: https://github.com/jhudsl/leanbuild
+[Ottrpal]: https://github.com/jhudsl/ottrpal
 
 <!-- Fill out this table using these instructions: https://github.com/jhudsl/DaSL_Course_Template_Bookdown/wiki/How-to-give-credits
 
