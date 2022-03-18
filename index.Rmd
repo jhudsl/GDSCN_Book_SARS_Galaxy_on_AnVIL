@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: SARS with Galaxy on AnVIL"
-date: "`r format(Sys.time(), '%B, %Y')`"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
