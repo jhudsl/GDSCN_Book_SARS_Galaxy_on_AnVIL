@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>8.2 Getting Started | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="8.2 Getting Started | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="8.2 Getting Started | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="cloud-computing.html"/>
-<link rel="next" href="student-activity-guide.html"/>
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="exercise-one-examining-fastq-files-in-galaxy.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -151,19 +151,50 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="overview-video" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Overview Video</h1>
-<p>This overview video introduces the lab activity. It briefly reviews some of the essential background for the activity, highlights key areas to focus on for activity assessment questions, and provides a detailed walk-through of the steps - from starting AnVIL and Galaxy to browsing the genome and shutting down the cloud computing instance.</p>
-<p><strong>Learning Objectives</strong></p>
+<div id="getting-started" class="section level2" number="8.2">
+<h2><span class="header-section-number">8.2</span> Getting Started</h2>
+<div id="set-up" class="section level3" number="8.2.1">
+<h3><span class="header-section-number">8.2.1</span> Set Up</h3>
+<p>In the next few steps, you will walk through how to get set up to use Galaxy on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.</p>
+<p>Use a web browser to go to the AnVIL website. In the browser type:</p>
+<pre><code>anvil.terra.bio</code></pre>
+<p>After logging in, click “View Workspaces”. Select the “Public” tab. In the top search bar type the activity workspace “SARS-CoV-2-Genome”. You can also go directly to the following link: <a href="https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome" class="uri">https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome</a>.</p>
+<p>Clone the workspace by clicking the teardrop button (<img src="resources/images/teardrop.png" id="id" class="class" width="25" height="20" alt="teardrop button" />). And selecting “Clone”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_625.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="480" /></p>
+<p>In the first box, give your Workspace clone a name by adding an underscore (“_”) and your name. For example, “SARS-CoV-2-Genome_Ava_Hoffman”. Next, select the Billing project provided by your instructor. Leave the bottom two boxes as-is and click “CLONE WORKSPACE”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_648.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="480" /></p>
+</div>
+<div id="starting-galaxy" class="section level3" number="8.2.2">
+<h3><span class="header-section-number">8.2.2</span> Starting Galaxy</h3>
+<p>Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis.</p>
+<p>In your new Workspace, click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="480" /></p>
+<p>You can also follow along with the first ~2 minutes of <a href="https://jhudatascience.org/AnVIL_Book_Getting_Started/starting-galaxy.html">this video</a> to start Galaxy on AnVIL.</p>
+</div>
+<div id="navigating-galaxy" class="section level3" number="8.2.3">
+<h3><span class="header-section-number">8.2.3</span> Navigating Galaxy</h3>
+<p>Notice the three main sections.</p>
+<p><strong>Tools</strong> - These are all of the bioinformatics tool packages available for you to use.</p>
+<p><strong>The Main Dashboard</strong> - This contains flash messages and posts when you first open Galaxy, but when we are using data this is the main interface area.</p>
+<p><strong>History</strong> - When you start a project you will be able to see all of the documents in the project in the history. Now be aware, this can become very busy. Also the naming that Galaxy uses is not very intuitive, so you must make sure that you label your files with something that makes sense to you.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" title="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="480" /></p>
+<p>On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.</p>
+</div>
+<div id="importing-data-into-galaxy" class="section level3" number="8.2.4">
+<h3><span class="header-section-number">8.2.4</span> Importing Data into Galaxy</h3>
+<p>Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in <code>fastq</code> because it is raw data from the sequencer.</p>
 <ol style="list-style-type: decimal">
-<li>Review lecture content</li>
-<li>Review big steps in the analysis</li>
-<li>Cover the setup on AnVIL in detail</li>
+<li><p>Click on “Upload Data” in the Tools pane.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="480" /></p></li>
+<li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<li><p>Click “Start” and once complete, you can click “Close”.</p></li>
+<li><p>Confirm your upload worked by looking at the file names in the History pane.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="480" /></p></li>
 </ol>
-<iframe src="https://drive.google.com/file/d/11Um1Pg8i6wyxPOdFKNPvPERIfv6TlkTw/preview" width="640" height="360" allow="autoplay">
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit?usp=sharing">here</a>.</p>
-
+</div>
 </div>
 <hr>
 <center> 
@@ -178,8 +209,8 @@
           </div>
         </div>
       </div>
-<a href="cloud-computing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="student-activity-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercise-one-examining-fastq-files-in-galaxy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -210,7 +241,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/08-overview-video.Rmd",
+"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/09-student-guide.Rmd",
 "text": "Edit"
 },
 "history": {

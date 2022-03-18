@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>8.4 Exercise Two: Alignment | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="8.4 Exercise Two: Alignment | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="8.4 Exercise Two: Alignment | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="cloud-computing.html"/>
-<link rel="next" href="student-activity-guide.html"/>
+<link rel="prev" href="exercise-one-examining-fastq-files-in-galaxy.html"/>
+<link rel="next" href="exercise-three-viewing-aligned-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -151,19 +151,26 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="overview-video" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Overview Video</h1>
-<p>This overview video introduces the lab activity. It briefly reviews some of the essential background for the activity, highlights key areas to focus on for activity assessment questions, and provides a detailed walk-through of the steps - from starting AnVIL and Galaxy to browsing the genome and shutting down the cloud computing instance.</p>
-<p><strong>Learning Objectives</strong></p>
-<ol style="list-style-type: decimal">
-<li>Review lecture content</li>
-<li>Review big steps in the analysis</li>
-<li>Cover the setup on AnVIL in detail</li>
+<div id="exercise-two" class="section level2" number="8.4">
+<h2><span class="header-section-number">8.4</span> Exercise Two: Alignment</h2>
+<p><em>Given that our data has passed some quality checks, we will try to align the data to the reference genome. In this case it is simple, a viral genome. A human sequencing project will generate much larger data sets. There are many aligners, but we will start off looking at a simple aligner BWA-MEM. This example uses paired data.</em></p>
+<p>We will use our two SARs data files, which are ready for alignment.
+<strong>VA_sample_forward_reads.fastq</strong>
+<strong>VA_sample_reverse_reads.fastq</strong></p>
+<p>Now go to GENOMICS ANALYSIS: Mapping and select “Map with BWA-MEM”. This program will align your reads to your SARS reference genome. Some of our reads are &gt;100 base pairs so we will use the MEM option.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_33.png" title="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." alt="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." width="480" /></p>
+<p>First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference <code>fasta</code> file that you uploaded as the reference.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_41.png" title="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." alt="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." width="480" /></p>
+<p>Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files. Leave other options as-is. <em>You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the execute button</em>. Click execute.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_50.png" title="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." width="480" /></p>
+<p>The output file is a <code>BAM</code> file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the <code>fastq</code> files). Instead you will use a genome viewer in the next step.</p>
+<div class="fyi">
+<p>QUESTIONS:</p>
+<ol start="7" style="list-style-type: decimal">
+<li><p>What is alignment software (for example, BWA-MEM) actually doing?</p></li>
+<li><p>Here we are using paired fastq (“paired end”) data. What is an advantage of using paired data?</p></li>
 </ol>
-<iframe src="https://drive.google.com/file/d/11Um1Pg8i6wyxPOdFKNPvPERIfv6TlkTw/preview" width="640" height="360" allow="autoplay">
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit?usp=sharing">here</a>.</p>
-
+</div>
 </div>
 <hr>
 <center> 
@@ -178,8 +185,8 @@
           </div>
         </div>
       </div>
-<a href="cloud-computing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="student-activity-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="exercise-one-examining-fastq-files-in-galaxy.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercise-three-viewing-aligned-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -210,7 +217,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/08-overview-video.Rmd",
+"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/09-student-guide.Rmd",
 "text": "Edit"
 },
 "history": {

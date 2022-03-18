@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>8.3 Exercise One: Examining fastq Files in Galaxy | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="8.3 Exercise One: Examining fastq Files in Galaxy | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Overview Video | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="8.3 Exercise One: Examining fastq Files in Galaxy | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="cloud-computing.html"/>
-<link rel="next" href="student-activity-guide.html"/>
+<link rel="prev" href="getting-started.html"/>
+<link rel="next" href="exercise-two.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -151,19 +151,51 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="overview-video" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Overview Video</h1>
-<p>This overview video introduces the lab activity. It briefly reviews some of the essential background for the activity, highlights key areas to focus on for activity assessment questions, and provides a detailed walk-through of the steps - from starting AnVIL and Galaxy to browsing the genome and shutting down the cloud computing instance.</p>
-<p><strong>Learning Objectives</strong></p>
+<div id="exercise-one-examining-fastq-files-in-galaxy" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Exercise One: Examining <code>fastq</code> Files in Galaxy</h2>
+<p><em>Now we have some data in our account we can look at it. In this exercise we will see data in <code>fastq</code> format. This is the typical output from an Illumina Sequencer, but also the standard format for most alignment software.</em></p>
+<div id="examining-inputs" class="section level3" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Examining Inputs</h3>
+<p>Use your mouse and click on the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) of the first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>). In the Main screen you will see something like this:</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_41.png" title="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." alt="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." width="480" /></p>
+<div class="fyi">
+<p>QUESTIONS:</p>
 <ol style="list-style-type: decimal">
-<li>Review lecture content</li>
-<li>Review big steps in the analysis</li>
-<li>Cover the setup on AnVIL in detail</li>
+<li><p>How many lines in a .fastq file represent an individual read?</p></li>
+<li><p>What does each line represent?</p></li>
+<li><p>Why is the final line for each read (the quality score) important?</p></li>
 </ol>
-<iframe src="https://drive.google.com/file/d/11Um1Pg8i6wyxPOdFKNPvPERIfv6TlkTw/preview" width="640" height="360" allow="autoplay">
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit?usp=sharing">here</a>.</p>
-
+</div>
+</div>
+<div id="quality-scoring" class="section level3" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Quality Scoring</h3>
+<p>FastQC is a tool which aims to provide simple quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a set of analyses which you can use to get a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.</p>
+<p>Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control tool folder. You will see something like this in the tools:</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_0.png" title="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." alt="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." width="480" /></p>
+<p>In the first drop down menu, make sure it has your first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>) loaded. Leave everything else as-is and click on the blue execute button at the bottom of the screen.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_6.png" title="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." alt="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." width="480" />
+<img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png" title="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." alt="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." width="480" /></p>
+<p>The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error.</p>
+<p>Click on the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) in the new file in the history “FASTQC on data2 Webpage”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_18.png" title="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." alt="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." width="480" /></p>
+<p>You will open up a summary report for the sequencing file:</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_23.png" title="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." alt="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." width="480" /></p>
+<div class="fyi">
+<p>QUESTIONS:</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Explore “Basic Statistics”. How many total reads are there? Have any been flagged as poor quality? What is the sequence length?</p></li>
+<li><p>Explore “Per base sequence quality”. Based on the Basic Statistics, is 28-40 a good or bad quality score?</p></li>
+<li><p>Is it okay to proceed based on the per base sequence quality?</p></li>
+</ol>
+</div>
+<div class="fyi">
+<p><strong>Breakout Box: Learn more about quality scores</strong></p>
+<p>You may be wondering how the fourth line of the .fastq files relates to the quality score above. To save space, the sequencer records an <a href="http://drive5.com/usearch/manual/quality_score.html">ASCII character</a> to represent scores 0-42. For example 10 corresponds to “+” and 40 corresponds to “I”. FastQC knows how to translate this. This is often called “Phred” scoring.</p>
+<p>What does 0-42 represent? These numbers, when plugged into a formula, tell us the probability of an error for that base. This is the formula, where Q is our quality score (0-42) and P is the probability of an error:</p>
+<p>Q = -10 log10(P)</p>
+<p>Using this formula, we can calculate that a quality score of 40 means only 0.00010 probability of an error!</p>
+</div>
+</div>
 </div>
 <hr>
 <center> 
@@ -178,8 +210,8 @@
           </div>
         </div>
       </div>
-<a href="cloud-computing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="student-activity-guide.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exercise-two.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -210,7 +242,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/08-overview-video.Rmd",
+"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/09-student-guide.Rmd",
 "text": "Edit"
 },
 "history": {
