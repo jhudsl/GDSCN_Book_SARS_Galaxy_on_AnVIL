@@ -26,3 +26,4 @@ register-and-solutions
 help
 galaxy-training-network
 download
+give-us-feedback
