@@ -22,7 +22,7 @@ This activity will teach you how to use the AnVIL platform to:
 
 ## Getting Started
 
-### Set Up
+### Set Up  {#set-up}
 
 In the next few steps, you will walk through how to get set up to use Galaxy on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.
 
@@ -46,7 +46,7 @@ In the first box, give your Workspace clone a name by adding an underscore (“_
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_648")
 ```
 
-### Starting Galaxy 
+### Starting Galaxy {#starting-galaxy}
 
 Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
 
@@ -74,7 +74,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.
 
-### Importing Data into Galaxy
+### Importing Data into Galaxy {#importing-data-into-galaxy}
 
 Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in `fastq` because it is raw data from the sequencer.
 
@@ -104,7 +104,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_861")
 ```
 
-## Exercise One: Examining `fastq` Files in Galaxy
+## Exercise One: Examining `fastq` Files in Galaxy {#exercise-one-examining-fastq-files-in-galaxy}
 
 _Now we have some data in our account we can look at it. In this exercise we will see data in `fastq` format. This is the typical output from an Illumina Sequencer, but also the standard format for most alignment software._
 
@@ -217,7 +217,7 @@ QUESTIONS:
 8. Here we are using paired fastq (“paired end”) data. What is an advantage of using paired data?
 :::
 
-## Exercise Three: Viewing aligned data
+## Exercise Three: Viewing aligned data {#exercise-three-viewing-aligned-data}
 
 We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.
 
@@ -289,7 +289,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 ```
 :::
 
-## Wrap-up
+## Wrap-up {#wrap-up}
 
 Once you are done with the activity, you’ll need to shut down your Galaxy cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.
 
