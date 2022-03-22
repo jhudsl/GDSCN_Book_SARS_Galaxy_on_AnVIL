@@ -1,3 +1,11 @@
 # Lesson Plan
 
-Coming soon!
+| Activity | Undergraduate course | Graduate course | |
+| :-- | :-- | :-- | :--|
+| Getting started [_Logging into AnVIL_] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#set-up), [_Provisioning Galaxy workspace_] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#starting-galaxy) | 10-15 minutes | 10-15 minutes | _Provisioning will take 8-10 minutes of waiting_ |
+| [Overview lecture] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/overview-video.html#overview-video) | 15 minutes | 15 minutes | 
+| [Exercise 1: Uploading data] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#importing-data-into-galaxy) | 10 minutes | 5 minutes |
+| [Exercise 2: Examining fastQ files] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#exercise-one-examining-fastq-files-in-galaxy) | 30 minutes | 10 minutes |
+| [Exercise 3: Aligning data] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#exercise-two) | 30 minutes | 10 minutes |
+| [Exercise 4: Viewing alignments] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#exercise-three-viewing-aligned-data) | 30 minutes | 10 minutes |
+| [Wrap-up] (https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL/student-activity-guide.html#wrap-up) | 5-10 minutes | 5 minutes |
