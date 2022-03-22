@@ -1,5 +1,7 @@
 # Student Activity Guide
 
+hello
+
 This chapter contains the student instructions for the SARS-CoV-2 Variant Detection with Galaxy activity.
 
 ## Introduction
