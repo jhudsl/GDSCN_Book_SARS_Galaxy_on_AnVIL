@@ -33,8 +33,36 @@ Please check out our full collection of AnVIL resources below!
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> none </td>
-   <td style="text-align:left;"> none </td>
+   <td style="text-align:left;"> AnVIL: Getting Started </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_Getting_Started </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AnVIL: Instructor Guide </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_Instructor_Guide </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> AnVIL: WDL </td>
+   <td style="text-align:left;"> https://jhudatascience.org/AnVIL_Book_WDL </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: SARS Galaxy on AnVIL </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_SARS_Galaxy_on_AnVIL </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: Statistics for Genomics Differential Expression </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_Differential_Expression </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: Statistics for Genomics PCA </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_PCA </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: Statistics for Genomics RNA-seq </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_RNA-seq </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> GDSCN: Statistics for Genomics SCRNA-seq </td>
+   <td style="text-align:left;"> https://jhudatascience.org/GDSCN_Book_Statistics_for_Genomics_SCRNA-seq </td>
   </tr>
 </tbody>
 </table>
