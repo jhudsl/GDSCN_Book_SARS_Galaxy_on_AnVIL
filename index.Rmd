@@ -18,6 +18,8 @@ output:
 
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
 
+<br>
+
 ## AnVIL Collection {-}
 
 Please check out our full collection of AnVIL resources below!
