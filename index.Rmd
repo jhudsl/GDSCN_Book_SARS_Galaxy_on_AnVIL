@@ -14,13 +14,6 @@ output:
       toc: true
 ---
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), "bookdown", "knitr", "rmarkdown"
-), "packages.bib")
-```
-
 # About this Book {-}
 
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
