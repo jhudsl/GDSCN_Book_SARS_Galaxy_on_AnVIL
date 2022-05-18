@@ -15,12 +15,12 @@ getting-started
 set-up
 starting-galaxy
 navigating-galaxy
-importing-data-into-galaxy
-exercise-one-examining-fastq-files-in-galaxy
+importing-data
+examining-fastq
 examining-inputs
 quality-scoring
-exercise-two
-exercise-three-viewing-aligned-data
+alignment
+view-alignment
 wrap-up
 register-and-solutions
 help

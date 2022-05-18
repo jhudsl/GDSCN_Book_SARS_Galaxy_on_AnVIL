@@ -16,13 +16,14 @@ This activity will teach you how to use the AnVIL platform to:
 
 1. Get started working on AnVIL
 1. Launch the Galaxy tool
+1. Import data into the Galaxy tool
 1. Examine fastq sequence data files
 1. Align sequence data to a reference genome
 1. View the aligned data and reference genomes interactively
 
 ## Getting Started
 
-### Set Up
+### Set Up {#set-up}
 
 In the next few steps, you will walk through how to get set up to use Galaxy on the AnVIL platform. AnVIL is centered around different “Workspaces”. Each Workspace functions almost like a mini code laboratory - it is a place where data can be examined, stored, and analyzed. The first thing we want to do is to copy or “clone” a Workspace to create a space for you to experiment.
 
@@ -51,7 +52,7 @@ In the first box, give your Workspace clone a name by adding an underscore (“_
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_648")
 ```
 
-### Starting Galaxy 
+### Starting Galaxy {#starting-galaxy}
 
 Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
 
@@ -79,7 +80,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.
 
-### Importing Data into Galaxy
+## Exercise One: Importing Data into Galaxy {#importing-data}
 
 Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in `fastq` because it is raw data from the sequencer.
 
@@ -109,7 +110,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_861")
 ```
 
-## Exercise One: Examining `fastq` Files in Galaxy
+## Exercise Two: Examining `fastq` Files in Galaxy {#examining-fastq}
 
 _Now we have some data in our account we can look at it. In this exercise we will see data in `fastq` format. This is the typical output from an Illumina Sequencer, but also the standard format for most alignment software._
 
@@ -186,7 +187,7 @@ Q = -10 log10(P)
 Using this formula, we can calculate that a quality score of 40 means only 0.00010 probability of an error!
 :::
 
-## Exercise Two: Alignment {#exercise-two}
+## Exercise Three: Alignment {#alignment}
 
 _Given that our data has passed some quality checks, we will try to align the data to the reference genome. In this case it is simple, a viral genome. A human sequencing project will generate much larger data sets. There are many aligners, but we will start off looking at a simple aligner BWA-MEM. This example uses paired data._ 
 
@@ -222,7 +223,7 @@ QUESTIONS:
 8. Here we are using paired fastq (“paired end”) data. What is an advantage of using paired data?
 :::
 
-## Exercise Three: Viewing aligned data
+## Exercise Four: Viewing aligned data {#view-alignment}
 
 We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.
 
@@ -240,7 +241,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 This is interesting, but it doesn’t let us compare the genome to the sample we have. We suspect there may be some differences that indicate our sample is the delta variant. Go back to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Just like before, under "Reference genome to display", ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. 
 
-This time, we’ll add our alignment data from [Exercise Two](#exercise-two). Click the “+ Insert Track Group” button. 
+This time, we’ll add our alignment data from [Exercise Three](#alignment). Click the “+ Insert Track Group” button. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_83")

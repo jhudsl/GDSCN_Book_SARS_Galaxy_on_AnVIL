@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>8.6 Exercise Four: Viewing aligned data | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="8.6 Exercise Four: Viewing aligned data | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="8.6 Exercise Four: Viewing aligned data | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="what-is-a-variant.html"/>
-<link rel="next" href="alignments.html"/>
+<link rel="prev" href="alignment.html"/>
+<link rel="next" href="wrap-up.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -154,19 +154,42 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="the-sequencing-revolution" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> The Sequencing Revolution</h1>
-<p>This lecture module introduces the history of the sequencing revolution. It highlights the enormous proliferation of genomic data that has accompanied the rapidly growing technology. It also suggests opportunities for careers in genomics, as well as an in-depth look at how some sequencing technologies actually work.</p>
-<p><strong>Learning Objectives</strong></p>
-<ol style="list-style-type: decimal">
-<li>Learn the history the sequencing revolution</li>
-<li>Introduce the sequencing workforce</li>
-<li>Explore the evolution of sequencing technology</li>
+<div id="view-alignment" class="section level2" number="8.6">
+<h2><span class="header-section-number">8.6</span> Exercise Four: Viewing aligned data</h2>
+<p>We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.</p>
+<p>Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select “JBrowse”. Under “Reference genome to display” ensure that “Use a genome from history” is selected. Below this, make sure that the <strong>SARS-CoV-2_reference_genome.fasta</strong> file is selected. Click “Execute”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_61.png" title="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." width="480" /></p>
+<p>You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) to open JBrowse. You will need to click on the magnifying glasses to zoom in, but you should see the A,C,G, and Ts and their corresponding colors that make up the SARS-CoV-2 genome!</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_72.png" title="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." alt="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." width="480" /></p>
+<p>This is interesting, but it doesn’t let us compare the genome to the sample we have. We suspect there may be some differences that indicate our sample is the delta variant. Go back to STATISTICS AND VISUALIZATION: Graph/Display Data and select “JBrowse”. Just like before, under “Reference genome to display”, ensure that “Use a genome from history” is selected. Below this, make sure that the <strong>SARS-CoV-2_reference_genome.fasta</strong> file is selected.</p>
+<p>This time, we’ll add our alignment data from <a href="alignment.html#alignment">Exercise Three</a>. Click the “+ Insert Track Group” button.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_83.png" title="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." width="480" /></p>
+<p>Click “+ Insert Annotation Track” to add our alignment data.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_92.png" title="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." width="480" /></p>
+<p>You’ll keep everything the same except the following:</p>
+<ul>
+<li><strong>Track Type</strong>: BAM Pileups</li>
+<li><strong>Autogenerate SNP Track</strong>: Yes</li>
+<li><strong>Maximum size of BAM chunks</strong>: Add one more zero: 50000000</li>
+</ul>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_99.png" title="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." alt="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." width="480" /></p>
+<p>These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”.</p>
+<p>You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_20.png" title="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." alt="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." width="480" /></p>
+<p>Let’s look at an example mutation in our sample. Type in the reference position “24410” and click “Go”. You should see a bunch of “A”s highlighted in green throughout our sample. The reference sequence (top line) is a “G” but all of the reads are an “A”. This means that our sample is genetically different from the established SARS-CoV-2 reference genome! Researchers often call these single base differences “SNPs” - Single Nucleotide Polymorphisms.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_109.png" title="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." alt="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." width="480" /></p>
+<div class="fyi">
+<p>QUESTIONS:</p>
+<ol start="9" style="list-style-type: decimal">
+<li><p>How long is the SARS-CoV-2 genome? Hint: zoom out and scroll to the end of the genome.</p></li>
+<li><p>Locate position 23,603. This is the site of an important mutation in the spike protein of the delta variant “P681R”. In this mutation, the amino acid proline is replaced by arginine. Is this mutation present at position 23,603 in our sample? Based on the evidence, do you think this sample is a delta variant?</p></li>
 </ol>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8NyyG2ladbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/1oWzck0r3djLUkS8t29v0D32-fnZDa7Qcb6GrO_VfFmk/edit?usp=sharing">here</a>.</p>
-
+</div>
+<div class="fyi">
+<p><strong>Breakout Box: Sequencing errors</strong></p>
+<p>It’s possible to make mistakes in the data preparation before we get to the data analysis. Sometimes this happens when the samples are being prepared in the lab and sometimes this happens because the sequencer makes a mistake. This is one reason why quality scores are helpful. With millions of reads of data, it’s more likely that we see a “SNP” that is actually an accident. Multiple copies of the same areas of our data (“read depth”) help us be sure it’s a real SNP. When we compare across lots of aligned reads of the same area, we can determine the actual sequence by consensus. For example, we can be reasonably confident that the “G” at position 1,203 shown below is just a sequencing or lab mistake.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_127.png" title="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." alt="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." width="480" /></p>
+</div>
 </div>
 <hr>
 <center> 
@@ -181,8 +204,8 @@
           </div>
         </div>
       </div>
-<a href="what-is-a-variant.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="alignments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="alignment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="wrap-up.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -213,7 +236,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/05-sequencing.Rmd",
+"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/09-student-guide.Rmd",
 "text": "Edit"
 },
 "history": {
