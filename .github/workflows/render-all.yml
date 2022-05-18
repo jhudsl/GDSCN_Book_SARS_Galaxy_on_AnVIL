@@ -32,15 +32,31 @@ jobs:
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
+  call-custom-workflow:
+    name: Custom Workflow
+    needs: yaml-check
+    uses: ./.github/workflows/custom-workflow.yml
+    with:
+      render-type: 'main'
+      repository: $GITHUB_REPOSITORY
+    secrets:
+      gh_pat: ${{ secrets.GH_PAT }}
+
   render-bookdown:
     name: Render bookdown
-    needs: yaml-check
+    needs: [yaml-check, call-custom-workflow]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
     if: ${{needs.yaml-check.outputs.toggle_bookdown == 'yes'}}
 
     steps:
+      # Give permission to access the repo
+      - name: safelist repository
+        run: |
+          repo_name='${{ github.event.repository.name }}'
+          git config --global --add safe.directory /__w/$repo_name/$repo_name
+    
       - name: checkout
         uses: actions/checkout@v2
         with:
@@ -49,7 +65,6 @@ jobs:
 
       - name: Login as jhudsl-robot
         run: |
-
           git config --local user.email "itcrtrainingnetwork@gmail.com"
           git config --local user.name "jhudsl-robot"
 
@@ -85,13 +100,19 @@ jobs:
 
   render-tocless:
     name: Render TOC-less version for Leanpub or Coursera
-    needs: [yaml-check]
+    needs: [yaml-check, call-custom-workflow]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
     if: ${{needs.yaml-check.outputs.toggle_coursera == 'yes' || needs.yaml-check.outputs.toggle_leanpub == 'yes'}}
 
     steps:
+      # Give permission to access the repo
+      - name: safelist repository
+        run: |
+          repo_name='${{ github.event.repository.name }}'
+          git config --global --add safe.directory /__w/$repo_name/$repo_name
+          
       - name: checkout
         uses: actions/checkout@v2
         with:
@@ -122,7 +143,7 @@ jobs:
 
   render-leanpub:
     name: Finish Leanpub prep
-    needs: [yaml-check, render-tocless]
+    needs: [yaml-check, call-custom-workflow, render-tocless]
     runs-on: ubuntu-latest
     container:
       image: jhudsl/ottrpal:main
@@ -187,13 +208,19 @@ jobs:
 
   render-coursera:
     name: Finish Coursera prep
-    needs: [yaml-check, render-tocless]
+    needs: [yaml-check, call-custom-workflow, render-tocless]
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
     if: ${{needs.yaml-check.outputs.toggle_coursera == 'yes'}}
 
     steps:
+      # Give permission to access the repo
+      - name: safelist repository
+        run: |
+          repo_name='${{ github.event.repository.name }}'
+          git config --global --add safe.directory /__w/$repo_name/$repo_name
+    
       - name: checkout
         uses: actions/checkout@v2
         with:
