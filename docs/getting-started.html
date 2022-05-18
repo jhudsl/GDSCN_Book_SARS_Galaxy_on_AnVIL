@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2022-04-27" />
+<meta name="date" content="2022-05-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="introduction.html"/>
-<link rel="next" href="exercise-one-examining-fastq-files-in-galaxy.html"/>
+<link rel="next" href="importing-data.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -101,16 +101,16 @@
 <li class="chapter" data-level="8.2.1" data-path="getting-started.html"><a href="getting-started.html#set-up"><i class="fa fa-check"></i><b>8.2.1</b> Set Up</a></li>
 <li class="chapter" data-level="8.2.2" data-path="getting-started.html"><a href="getting-started.html#starting-galaxy"><i class="fa fa-check"></i><b>8.2.2</b> Starting Galaxy</a></li>
 <li class="chapter" data-level="8.2.3" data-path="getting-started.html"><a href="getting-started.html#navigating-galaxy"><i class="fa fa-check"></i><b>8.2.3</b> Navigating Galaxy</a></li>
-<li class="chapter" data-level="8.2.4" data-path="getting-started.html"><a href="getting-started.html#importing-data-into-galaxy"><i class="fa fa-check"></i><b>8.2.4</b> Importing Data into Galaxy</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="exercise-one-examining-fastq-files-in-galaxy.html"><a href="exercise-one-examining-fastq-files-in-galaxy.html"><i class="fa fa-check"></i><b>8.3</b> Exercise One: Examining <code>fastq</code> Files in Galaxy</a>
+<li class="chapter" data-level="8.3" data-path="importing-data.html"><a href="importing-data.html"><i class="fa fa-check"></i><b>8.3</b> Exercise One: Importing Data into Galaxy</a></li>
+<li class="chapter" data-level="8.4" data-path="examining-fastq.html"><a href="examining-fastq.html"><i class="fa fa-check"></i><b>8.4</b> Exercise Two: Examining <code>fastq</code> Files in Galaxy</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="exercise-one-examining-fastq-files-in-galaxy.html"><a href="exercise-one-examining-fastq-files-in-galaxy.html#examining-inputs"><i class="fa fa-check"></i><b>8.3.1</b> Examining Inputs</a></li>
-<li class="chapter" data-level="8.3.2" data-path="exercise-one-examining-fastq-files-in-galaxy.html"><a href="exercise-one-examining-fastq-files-in-galaxy.html#quality-scoring"><i class="fa fa-check"></i><b>8.3.2</b> Quality Scoring</a></li>
+<li class="chapter" data-level="8.4.1" data-path="examining-fastq.html"><a href="examining-fastq.html#examining-inputs"><i class="fa fa-check"></i><b>8.4.1</b> Examining Inputs</a></li>
+<li class="chapter" data-level="8.4.2" data-path="examining-fastq.html"><a href="examining-fastq.html#quality-scoring"><i class="fa fa-check"></i><b>8.4.2</b> Quality Scoring</a></li>
 </ul></li>
-<li class="chapter" data-level="8.4" data-path="exercise-two.html"><a href="exercise-two.html"><i class="fa fa-check"></i><b>8.4</b> Exercise Two: Alignment</a></li>
-<li class="chapter" data-level="8.5" data-path="exercise-three-viewing-aligned-data.html"><a href="exercise-three-viewing-aligned-data.html"><i class="fa fa-check"></i><b>8.5</b> Exercise Three: Viewing aligned data</a></li>
-<li class="chapter" data-level="8.6" data-path="wrap-up.html"><a href="wrap-up.html"><i class="fa fa-check"></i><b>8.6</b> Wrap-up</a></li>
+<li class="chapter" data-level="8.5" data-path="alignment.html"><a href="alignment.html"><i class="fa fa-check"></i><b>8.5</b> Exercise Three: Alignment</a></li>
+<li class="chapter" data-level="8.6" data-path="view-alignment.html"><a href="view-alignment.html"><i class="fa fa-check"></i><b>8.6</b> Exercise Four: Viewing aligned data</a></li>
+<li class="chapter" data-level="8.7" data-path="wrap-up.html"><a href="wrap-up.html"><i class="fa fa-check"></i><b>8.7</b> Wrap-up</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="register-and-solutions.html"><a href="register-and-solutions.html"><i class="fa fa-check"></i><b>A</b> Register and Solutions</a></li>
@@ -187,21 +187,6 @@ At this point, it might make things easier to open up a new window in your brows
 <p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" title="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="480" /></p>
 <p>On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.</p>
 </div>
-<div id="importing-data-into-galaxy" class="section level3" number="8.2.4">
-<h3><span class="header-section-number">8.2.4</span> Importing Data into Galaxy</h3>
-<p>Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in <code>fastq</code> because it is raw data from the sequencer.</p>
-<ol style="list-style-type: decimal">
-<li><p>Click on “Upload Data” in the Tools pane.</p>
-<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="480" /></p></li>
-<li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.</p>
-<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
-<li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
-<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
-<li><p>Click “Start” and once complete, you can click “Close”.</p></li>
-<li><p>Confirm your upload worked by looking at the file names in the History pane.</p>
-<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="480" /></p></li>
-</ol>
-</div>
 </div>
 <hr>
 <center> 
@@ -217,7 +202,7 @@ At this point, it might make things easier to open up a new window in your brows
         </div>
       </div>
 <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="exercise-one-examining-fastq-files-in-galaxy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="importing-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

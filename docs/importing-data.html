@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>8.3 Exercise One: Importing Data into Galaxy | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="8.3 Exercise One: Importing Data into Galaxy | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 The Sequencing Revolution | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="8.3 Exercise One: Importing Data into Galaxy | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="what-is-a-variant.html"/>
-<link rel="next" href="alignments.html"/>
+<link rel="prev" href="getting-started.html"/>
+<link rel="next" href="examining-fastq.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -154,19 +154,20 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="the-sequencing-revolution" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> The Sequencing Revolution</h1>
-<p>This lecture module introduces the history of the sequencing revolution. It highlights the enormous proliferation of genomic data that has accompanied the rapidly growing technology. It also suggests opportunities for careers in genomics, as well as an in-depth look at how some sequencing technologies actually work.</p>
-<p><strong>Learning Objectives</strong></p>
+<div id="importing-data" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Exercise One: Importing Data into Galaxy</h2>
+<p>Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in <code>fastq</code> because it is raw data from the sequencer.</p>
 <ol style="list-style-type: decimal">
-<li>Learn the history the sequencing revolution</li>
-<li>Introduce the sequencing workforce</li>
-<li>Explore the evolution of sequencing technology</li>
+<li><p>Click on “Upload Data” in the Tools pane.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="480" /></p></li>
+<li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<li><p>Click “Start” and once complete, you can click “Close”.</p></li>
+<li><p>Confirm your upload worked by looking at the file names in the History pane.</p>
+<p><img src="09-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="480" /></p></li>
 </ol>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8NyyG2ladbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/1oWzck0r3djLUkS8t29v0D32-fnZDa7Qcb6GrO_VfFmk/edit?usp=sharing">here</a>.</p>
-
 </div>
 <hr>
 <center> 
@@ -181,8 +182,8 @@
           </div>
         </div>
       </div>
-<a href="what-is-a-variant.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="alignments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="examining-fastq.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -213,7 +214,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/05-sequencing.Rmd",
+"link": "https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/edit/main/09-student-guide.Rmd",
 "text": "Edit"
 },
 "history": {
