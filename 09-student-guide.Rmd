@@ -311,9 +311,3 @@ Finally, select “Delete everything, including persistent disk”. Make sure yo
 ```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_146")
 ```
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Do
