@@ -25,3 +25,4 @@ if (nrow(url_checks) > 0) {
 # Save spell errors to file temporarily
 readr::write_csv(url_checks, file.path('resources', 'url_checks.csv'))
 }
+

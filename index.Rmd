@@ -24,3 +24,22 @@ knitr::write_bib(c(
 # About this Book {-}
 
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
+
+## AnVIL Collection {-}
+
+Please check out our full collection of AnVIL resources below!
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+source("scripts/anvil_repo_table.R")
+
+# Add below any repositories that should not be added
+exclude = c(
+  "anvil-intro",
+  "AnVIL_Template",
+  "AnVIL_Template_Test",
+  "GDSCN_bookdown_style"
+)
+
+# Create table for AnVIL repos detected through the API
+knitr::kable(make_anvil_repo_table(exclude), format = "html")
+```

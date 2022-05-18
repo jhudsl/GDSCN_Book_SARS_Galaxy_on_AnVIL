@@ -13,12 +13,26 @@ library(magrittr)
 if (!("spelling" %in% installed.packages())){
   install.packages("spelling")
 }
-
 # Find .git root directory
 root_dir <- rprojroot::find_root(rprojroot::has_dir(".git"))
 
+# Set up output file directory
+output_file <- file.path(root_dir, 'check_reports', 'spell_check_results.tsv')
+
+if (!dir.exists('check_reports')) {
+  dir.create('check_reports')
+}
+
+dictionary_file <- file.path(root_dir, 'resources', 'dictionary.txt')
+
+if (!file.exists(dictionary_file)) {
+  message(paste("No dictionary text file found at:", dictionary_file, "downloading one from the main OTTR Template repo"))
+  download.file("https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/resources/dictionary.txt",
+                destfile = dictionary_file)
+}
+
 # Read in dictionary
-dictionary <- readLines(file.path(root_dir, 'resources', 'dictionary.txt'))
+dictionary <- readLines(dictionary_file)
 
 # Only declare `.Rmd` files but not the ones in the style-sets directory
 files <- list.files(pattern = 'Rmd$', recursive = TRUE, full.names = TRUE)
