@@ -14,11 +14,30 @@ output:
       toc: true
 ---
 
-# About this Book {-}
+# Overview and Learning Objectives {-}
 
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
 
-<br>
+There is a growing need for undergraduate students to learn cutting-edge concepts in genomics data science, including performing analysis on the cloud instead of a personal computer. This lesson aims to introduce a mutant detection bioinformatics pipeline based on a publicly available genetic sample of SARS-CoV-2. Students will be introduced to the sequencing revolution, variants, genetic alignments, and essentials of cloud computing prior to the lab activity. During the lesson, students will work hands-on with the point-and-click Galaxy interface on the [AnVIL](https://anvilproject.org/) cloud computing resource to check data, perform an alignment, and visualize their results.
+
+## Skills Level
+
+:::{.notice}
+_Genetics_  
+**Novice**: no genetics knowledge needed
+ 
+_Programming skills_  
+**Novice**: no programming experience needed
+:::
+
+## Learning Objectives
+
+Learning objectives for this activity come from the [Genetics Core Competencies](https://genetics-gsa.org/education/genetics-learning-framework/):
+
+- Gather and evaluate experimental evidence, including qualitative and quantitative data
+- Generate and interpret graphs displaying experimental results
+- Critique large data sets and use bioinformatics to assess genetics data
+- Tap into the interdisciplinary nature of science
 
 ## AnVIL Collection {-}
 
