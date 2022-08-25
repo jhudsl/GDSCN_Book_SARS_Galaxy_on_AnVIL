@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Cloud Computing | GDSCN Book: SARS with Galaxy on AnVIL</title>
+  <title>Instructor Guide | GDSCN Book: SARS with Galaxy on AnVIL</title>
   <meta name="description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Cloud Computing | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta property="og:title" content="Instructor Guide | GDSCN Book: SARS with Galaxy on AnVIL" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Cloud Computing | GDSCN Book: SARS with Galaxy on AnVIL" />
+  <meta name="twitter:title" content="Instructor Guide | GDSCN Book: SARS with Galaxy on AnVIL" />
   
   <meta name="twitter:description" content="This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/anvil_favicon.ico" type="image/x-icon" />
-<link rel="prev" href="alignments.html"/>
-<link rel="next" href="overview-video.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="what-is-a-variant.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -155,20 +155,114 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="cloud-computing" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Cloud Computing</h1>
-<p>This lecture module introduces cloud computing and computing architecture. It reviews the utility of cloud computing for genomics and also highlights how all modules of this activity fit together.</p>
-<p><strong>Learning Objectives</strong></p>
-<ol style="list-style-type: decimal">
-<li>Learn about different types of computers</li>
-<li>Answer the question “What is cloud computing?”</li>
-<li>Learn about cloud computing for genomics</li>
-<li>Revisit the big picture, from variants to alignments</li>
-</ol>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iNYRd3a6Sdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>You can view and download the Google Slides <a href="https://docs.google.com/presentation/d/1xj5cfJAA1vSX7GDXbGmNJlooA0lybdW4H3Ux28yhIlg/edit?usp=sharing">here</a>.</p>
+<div id="instructor-guide" class="section level1 unnumbered">
+<h1>Instructor Guide</h1>
+<div id="suggested-activity-context" class="section level2 unnumbered">
+<h2>Suggested Activity Context</h2>
+<p><strong>Course Audience</strong></p>
+<ul>
+<li>Undergraduate biology majors</li>
+<li>Graduate students with less exposure to bioinformatics</li>
+</ul>
+<p><strong>Course Prerequisites</strong></p>
+<ul>
+<li>Layman understanding of genetics (understanding of DNA, genes, trait inheritance)</li>
+<li>Some previous exposure to the central dogma of molecular biology</li>
+</ul>
+<p><strong>Class Type</strong></p>
+<ul>
+<li>Lab</li>
+<li>Computer-based</li>
+</ul>
+<p><strong>Class Size</strong></p>
+<ul>
+<li>1-50</li>
+</ul>
+<p><strong>Lesson Duration</strong></p>
+<ul>
+<li>20-30 minute pre-lab lecture</li>
+<li>3 hour lab for undergraduate students</li>
+<li>1 hour lab for graduate students</li>
+<li>Additional short lecture modules</li>
+</ul>
+<p><strong>Assessment Type</strong></p>
+<ul>
+<li>Short answer questions at each lab stage</li>
+</ul>
+</div>
+<div id="lesson-plan" class="section level2 unnumbered">
+<h2>Lesson Plan</h2>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Activity</th>
+<th align="left">Undergraduate course</th>
+<th align="left">Graduate course</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Getting started <a href="09-student-guide#set-up"><em>Logging into AnVIL</em></a>, <a href="09-student-guide#starting-galaxy"><em>Provisioning Galaxy workspace</em></a></td>
+<td align="left">10-15 minutes</td>
+<td align="left">10-15 minutes</td>
+<td align="left"><em>Provisioning will take 8-10 minutes of waiting</em></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="09-student-guide#overview-video">Overview lecture</a></td>
+<td align="left">15 minutes</td>
+<td align="left">15 minutes</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="09-student-guide#importing-data">Exercise 1: Uploading data</a></td>
+<td align="left">10 minutes</td>
+<td align="left">5 minutes</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="09-student-guide#examining-fastq">Exercise 2: Examining fastQ files</a></td>
+<td align="left">30 minutes</td>
+<td align="left">10 minutes</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="09-student-guide#alignment">Exercise 3: Aligning data</a></td>
+<td align="left">30 minutes</td>
+<td align="left">10 minutes</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><a href="09-student-guide#view-alignment">Exercise 4: Viewing alignments</a></td>
+<td align="left">30 minutes</td>
+<td align="left">10 minutes</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="09-student-guide#wrap-up">Wrap-up</a></td>
+<td align="left">5-10 minutes</td>
+<td align="left">5 minutes</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="notes-for-instructors" class="section level2 unnumbered">
+<h2>Notes for Instructors</h2>
+<p>Depending on your needs, you might decide to run this Galaxy activity on a different cloud provider, such as the original <a href="https://usegalaxy.org/">usegalaxy.org</a>. More information about Galaxy is available at <a href="https://training.galaxyproject.org">training.galaxyproject.org</a>.</p>
+<p>More Coming soon!</p>
+</div>
+<div id="getting-credit-for-professional-development" class="section level2 unnumbered">
+<h2>Getting Credit for Professional Development</h2>
+<p>We are happy to provide a letter to your supervisor, department head, or dean to indicate you’ve worked through this content and intend to use it in your class. See the example here.</p>
 
+</div>
 </div>
 
 
@@ -186,8 +280,8 @@
           </div>
         </div>
       </div>
-<a href="alignments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="overview-video.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="what-is-a-variant.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
