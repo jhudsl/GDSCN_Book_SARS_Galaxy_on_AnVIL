@@ -54,16 +54,14 @@ if (nrow(sp_errors) > 0) {
     data.frame() %>%
     tidyr::unnest(cols = found) %>%
     tidyr::separate(found, into = c("file", "lines"), sep = ":")
+} else {
+  sp_errors <- data.frame(errors = NA)
 }
 
 # Print out how many spell check errors
 write(nrow(sp_errors), stdout())
 
-if (!dir.exists("resources")) {
-  dir.create("resources")
-}
-
-if (nrow(sp_errors) > 0) {
 # Save spell errors to file temporarily
-readr::write_tsv(sp_errors, file.path('resources', 'spell_check_results.tsv'))
-}
+readr::write_tsv(sp_errors, output_file)
+
+message(paste0("Saved to: ", output_file))
