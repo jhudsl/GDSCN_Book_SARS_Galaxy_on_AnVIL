@@ -22,13 +22,13 @@ There is a growing need for undergraduate students to learn cutting-edge concept
 
 ## Skills Level {-}
 
-:::{.notice}
+<div class = "notice">
 _Genetics_  
 **Novice**: no genetics knowledge needed
  
 _Programming skills_  
 **Novice**: no programming experience needed
-:::
+</div>
 
 ## Learning Objectives {-}
 
