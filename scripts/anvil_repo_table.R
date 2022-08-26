@@ -29,15 +29,17 @@ make_anvil_repo_table <- function(exclude = NULL) {
         rename(Description = description, Topics = topics) %>% 
         select(`Book Name`, Description, Topics)
       
-      message(paste(colnames(df)))
+      message("Colnames are: \n", paste(colnames(df), collapse='\n'))
+      
+      return(df)
     },
     # Will error out if file doesn't exist - provides a blank tibble instead
     error = function(e) {
       df <- tibble(name = "none", html_url = "none")
       
       message("Rendering table of AnVIL collection failed. Please try rerunning the workflow or if needed, create an issue in the AnVIL_Template repository at https://github.com/jhudsl/AnVIL_Template.")
+      
+      return(df)
     }
   )
-  
-  return(df)
 }
