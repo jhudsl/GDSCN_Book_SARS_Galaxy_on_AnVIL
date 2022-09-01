@@ -9,7 +9,6 @@ fastq
 FASTQ
 FastQC
 FASTQC
-fyi
 galaxyproject
 GDSCN
 https
