@@ -33,7 +33,7 @@ Use a web browser to go to the AnVIL website. In the browser type:
 anvil.terra.bio
 ```
 
-:::{.fyi}
+:::{.notice}
 **Tip**
 At this point, it might make things easier to open up a new window in your browser and split your screen. That way, you can follow along with this guide on one side and execute the steps on the other.
 :::
@@ -104,7 +104,7 @@ Use your mouse and click on the eye icon (![eye button image](resources/images/e
 
 ![](09-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_41.png)
 
-::: {.fyi}
+::: {.reflection}
 QUESTIONS:
 
 1. How many lines in a .fastq file represent an individual read?
@@ -137,7 +137,7 @@ You will open up a summary report for the sequencing file:
 
 ![](09-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_23.png)
 
-::: {.fyi}
+::: {.reflection}
 QUESTIONS:
 
 4. Explore “Basic Statistics”. How many total reads are there? Have any been flagged as poor quality? What is the sequence length?
@@ -147,7 +147,7 @@ QUESTIONS:
 6. Is it okay to proceed based on the per base sequence quality?
 :::
 
-::: {.fyi}
+::: {.dictionary}
 **Breakout Box: Learn more about quality scores**
 
 You may be wondering how the fourth line of the .fastq files relates to the quality score above. To save space, the sequencer records an [ASCII character](http://drive5.com/usearch/manual/quality_score.html) to represent scores 0-42. For example 10 corresponds to “+” and 40 corresponds to “I”. FastQC knows how to translate this. This is often called “Phred” scoring.
@@ -181,7 +181,7 @@ Under the “Single or Paired-end reads” ensure the “Paired” option is sel
 
 The output file is a `BAM` file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
 
-::: {.fyi}
+::: {.reflection}
 QUESTIONS:
 
 7. What is alignment software (for example, BWA-MEM) actually doing?
@@ -229,7 +229,7 @@ Let’s look at an example mutation in our sample. Type in the reference positio
 
 ![](09-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_109.png)
 
-:::{.fyi}
+:::{.reflection}
 QUESTIONS:
 
 9. How long is the SARS-CoV-2 genome? Hint: zoom out and scroll to the end of the genome.
@@ -237,7 +237,7 @@ QUESTIONS:
 10. Locate position 23,603. This is the site of an important mutation in the spike protein of the delta variant “P681R”. In this mutation, the amino acid proline is replaced by arginine. Is this mutation present at position 23,603 in our sample? Based on the evidence, do you think this sample is a delta variant?
 :::
 
-:::{.fyi}
+:::{.dictionary}
 **Breakout Box: Sequencing errors**
 
 It’s possible to make mistakes in the data preparation before we get to the data analysis. Sometimes this happens when the samples are being prepared in the lab and sometimes this happens because the sequencer makes a mistake. This is one reason why quality scores are helpful. With millions of reads of data, it’s more likely that we see a “SNP” that is actually an accident. Multiple copies of the same areas of our data (“read depth”) help us be sure it’s a real SNP. When we compare across lots of aligned reads of the same area, we can determine the actual sequence by consensus. For example, we can be reasonably confident that the “G” at position 1,203 shown below is just a sequencing or lab mistake.

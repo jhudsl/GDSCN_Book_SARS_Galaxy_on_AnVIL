@@ -1,13 +1,13 @@
 ---
 title: "GDSCN Book: SARS with Galaxy on AnVIL"
-date: "August 26, 2022"
+date: "September 08, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
 description: "This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection."
-favicon: assets/anvil_favicon.ico
+favicon: assets/GDSCN_style/gdscn_favicon.ico
 output:
     bookdown::word_document2:
       reference_docx: assets/gdscn-template.docx

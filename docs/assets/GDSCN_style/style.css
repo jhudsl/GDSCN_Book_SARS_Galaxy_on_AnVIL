@@ -450,3 +450,26 @@ a.anchor:hover {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+/* fix the image urls since our AnVIL style is in a different location */
+/* images paths are relative to the CSS file */
+
+div.notice{
+  background-image: url("../box_images/note.png");
+}
+
+div.warning{
+  background-image: url("../box_images/warning.png");
+}
+
+div.github{
+  background-image: url("../box_images/github.png");
+}
+
+div.dictionary{
+  background-image: url("../box_images/dictionary.png");
+}
+
+div.reflection{
+  background-image: url("../box_images/thinking_face.png");
+}
