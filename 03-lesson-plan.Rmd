@@ -48,8 +48,6 @@
 
 Depending on your needs, you might decide to run this Galaxy activity on a different cloud provider, such as the original [usegalaxy.org](https://usegalaxy.org/). More information about Galaxy is available at [training.galaxyproject.org](https://training.galaxyproject.org).
 
-More Coming soon!
-
 ## Getting Credit for Professional Development {-}
 
-We are happy to provide a letter to your supervisor, department head, or dean to indicate you've worked through this content and intend to use it in your class. See the example here.
+We are happy to provide a letter to your supervisor, department head, or dean to indicate you've worked through this content and intend to use it in your class. You can [request a letter here](https://forms.gle/Ar542ZEwLnSRbrZN9).
