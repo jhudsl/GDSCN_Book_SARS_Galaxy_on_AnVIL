@@ -12,7 +12,6 @@ rmd_files: ["index.Rmd",
             "A-register-solutions.Rmd",
             "B-help.Rmd",
             "D-download.Rmd",
-            "E-feedback.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
