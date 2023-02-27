@@ -9,7 +9,7 @@ rmd_files: ["index.Rmd",
             "07-cloud.Rmd",
             "08-overview-video.Rmd",
             "09-student-guide.Rmd",
-            "A-register-solutions.Rmd",
+            "10-answer-key.Rmd",
             "B-help.Rmd",
             "D-download.Rmd",
             "About.Rmd"]
