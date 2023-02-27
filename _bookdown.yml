@@ -10,8 +10,8 @@ rmd_files: ["index.Rmd",
             "08-overview-video.Rmd",
             "09-student-guide.Rmd",
             "10-answer-key.Rmd",
-            "B-help.Rmd",
-            "D-download.Rmd",
+            "11-download.Rmd"
+            "12-help.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
