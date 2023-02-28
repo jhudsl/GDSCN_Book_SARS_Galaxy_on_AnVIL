@@ -2,16 +2,16 @@ book_filename: "GDSCN Book SARS with Galaxy on AnVIL"
 chapter_name: "Chapter "
 repo: https://github.com/jhudsl/GDSCN_Book_SARS_Galaxy_on_AnVIL/
 rmd_files: ["index.Rmd",
-            "03-lesson-plan.Rmd",
-            "04-variants.Rmd",
-            "05-sequencing.Rmd",
-            "06-alignments.Rmd",
-            "07-cloud.Rmd",
-            "08-overview-video.Rmd",
-            "09-student-guide.Rmd",
-            "10-answer-key.Rmd",
-            "11-download.Rmd",
-            "12-help.Rmd",
+            "01-lesson-plan.Rmd",
+            "02-variants.Rmd",
+            "03-sequencing.Rmd",
+            "04-alignments.Rmd",
+            "05-cloud.Rmd",
+            "06-overview-video.Rmd",
+            "07-student-guide.Rmd",
+            "08-answer-key.Rmd",
+            "09-download.Rmd",
+            "10-help.Rmd",
             "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
