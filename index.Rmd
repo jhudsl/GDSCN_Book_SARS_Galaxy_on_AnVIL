@@ -20,6 +20,8 @@ This book provides resources for instructors to engage students in a cloud-based
 
 There is a growing need for undergraduate students to learn cutting-edge concepts in genomics data science, including performing analysis on the cloud instead of a personal computer. This lesson aims to introduce a mutant detection bioinformatics pipeline based on a publicly available genetic sample of SARS-CoV-2. Students will be introduced to the sequencing revolution, variants, genetic alignments, and essentials of cloud computing prior to the lab activity. During the lesson, students will work hands-on with the point-and-click Galaxy interface on the [AnVIL](https://anvilproject.org/) cloud computing resource to check data, perform an alignment, and visualize their results.
 
+This course is part of a collection of teaching resources developed through the *Genomic Data Science Community Network* (GDSCN). GDSCN works towards a vision where researchers, educators, and students from diverse backgrounds are able to fully participate in genomic data science research.  Learn more about GDSCN by visiting https://www.gdscn.org/home or reading the [article in Genome Research](https://doi.org/10.1101/gr.276496.121).
+
 ## Skills Level {-}
 
 <div class = "notice">
@@ -41,19 +43,6 @@ Learning objectives for this activity come from the [Genetics Core Competencies]
 
 ## AnVIL Collection {-}
 
-Please check out our full collection of AnVIL resources below!
+Additional guides are provided to help you with Workspaces, launch interactive tools, and start working with data. Learn more about AnVIL by visiting https://anvilproject.org or reading the [article in Cell Genomics](https://www.sciencedirect.com/science/article/pii/S2666979X21001063).
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-source("scripts/anvil_repo_table.R")
-
-# Add below any repositories that should not be added
-exclude = c(
-  "anvil-intro",
-  "AnVIL_Template",
-  "AnVIL_Template_Test",
-  "GDSCN_bookdown_style"
-)
-
-# Create table for AnVIL repos detected through the API
-knitr::kable(make_anvil_repo_table(exclude), format = "html")
-```
+Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
