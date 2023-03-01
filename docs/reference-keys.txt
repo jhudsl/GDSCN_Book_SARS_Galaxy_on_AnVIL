@@ -18,7 +18,3 @@ quality-scoring
 alignment
 view-alignment
 wrap-up
-register-and-solutions
-help
-download
-give-us-feedback
