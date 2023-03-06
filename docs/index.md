@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: SARS with Galaxy on AnVIL"
-date: "March 02, 2023"
+date: "March 06, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -19,6 +19,12 @@ output:
 This book provides resources for instructors to engage students in a cloud-based Galaxy activity on AnVIL, focused on SARS-CoV-2 variant detection.
 
 There is a growing need for undergraduate students to learn cutting-edge concepts in genomics data science, including performing analysis on the cloud instead of a personal computer. This lesson aims to introduce a mutant detection bioinformatics pipeline based on a publicly available genetic sample of SARS-CoV-2. Students will be introduced to the sequencing revolution, variants, genetic alignments, and essentials of cloud computing prior to the lab activity. During the lesson, students will work hands-on with the point-and-click Galaxy interface on the [AnVIL](https://anvilproject.org/) cloud computing resource to check data, perform an alignment, and visualize their results.
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OFGa6x2bGHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 ## Skills Level {-}
 
