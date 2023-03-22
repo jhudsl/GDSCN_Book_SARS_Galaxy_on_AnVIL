@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: SARS with Galaxy on AnVIL"
-date: "March 06, 2023"
+date: "March 22, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
