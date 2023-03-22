@@ -1,5 +1,6 @@
 bookdown::gitbook:
-  css: assets/GDSCN_style/style.css
+  # When using multiple css files, the default file path will be the first one #
+  css: [assets/style.css, assets/GDSCN_style/gdscn.css]
   includes:
     before_body: assets/GDSCN_style/big-image_gdscn.html
     after_body: assets/GDSCN_style/footer.html
