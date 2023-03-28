@@ -95,7 +95,7 @@ You will see that the environment is still being set up.
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_38")
 ```
 
-This will take 8-10 minutes. When it is done, click “Open”.
+This will take 8-10 minutes. When it is done, click “Open”. You might need to refresh the page.
 
 ```{r, echo=FALSE, fig.alt='The Provisioning status text has changed to "Launch Galaxy" indicating the cloud environment is ready to use.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_46")
