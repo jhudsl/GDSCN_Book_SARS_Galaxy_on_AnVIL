@@ -6,6 +6,7 @@
 
 - Undergraduate biology majors
 - Graduate students with less exposure to bioinformatics
+- Professionals interested in building bioinformatics skills
 
 **Course Prerequisites**  
 

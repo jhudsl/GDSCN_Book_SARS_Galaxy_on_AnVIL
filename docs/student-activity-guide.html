@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-03-22" />
+<meta name="date" content="2023-03-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -98,7 +98,7 @@
 <li class="chapter" data-level="6.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#introduction"><i class="fa fa-check"></i><b>6.1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="6.1.1" data-path="student-activity-guide.html"><a href="student-activity-guide.html#before-you-start"><i class="fa fa-check"></i><b>6.1.1</b> Before You Start</a></li>
-<li class="chapter" data-level="6.1.2" data-path="student-activity-guide.html"><a href="student-activity-guide.html#objectives"><i class="fa fa-check"></i><b>6.1.2</b> Objectives</a></li>
+<li class="chapter" data-level="6.1.5" data-path="student-activity-guide.html"><a href="student-activity-guide.html#objectives"><i class="fa fa-check"></i><b>6.1.5</b> Objectives</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="student-activity-guide.html"><a href="student-activity-guide.html#getting-started"><i class="fa fa-check"></i><b>6.2</b> Getting Started</a>
 <ul>
@@ -164,10 +164,46 @@
 <p>Galaxy is a free, relatively easy to use bioinformatics implementation package. It changes command line programs into GUI based programs.</p>
 <div id="before-you-start" class="section level3" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> Before You Start</h3>
-<p>Make sure you have an AnVIL account (refer to <a href="https://jhudatascience.org/AnVIL_Book_Instructor_Guide/student-account-setup.html" class="uri">https://jhudatascience.org/AnVIL_Book_Instructor_Guide/student-account-setup.html</a>)</p>
+<p>Make sure you have an AnVIL account.</p>
+<div class="borrowed_chunk">
+<p>In order to run your analyses, you will use the <a href="https://anvilproject.org/">AnVIL cloud computing platform</a>, so that you do not need to install everything on your own computer. The AnVIL (Analysis Visualization and Informatics Lab-space) platform is specially designed for analyzing biological data, and is used by scientists doing all sorts of biological research.</p>
+<div class="notice">
+<p><strong>AnVIL in a nutshell</strong></p>
+<ul>
+<li>Behind the scenes, AnVIL relies on Google Cloud Platform to provide computing infrastructure. Basically, AnVIL lets you “rent” computers from Google (remotely). Whenever you run an analyses on AnVIL, it actually runs on one of Google’s computers, and AnVIL lets you see the results in your browser.</li>
+<li>AnVIL uses <a href="https://anvil.terra.bio/">Terra</a> to provide many computational tools useful for biological data analysis, such as <a href="https://www.rstudio.com/products/rstudio/">RStudio</a>, <a href="https://usegalaxy.org/">Galaxy</a>, and <a href="https://jupyter.org/">Jupyter Notebooks</a>. Terra takes care of installing these tools on Google’s computers, so that you can just start using them.</li>
+</ul>
 </div>
-<div id="objectives" class="section level3" number="6.1.2">
-<h3><span class="header-section-number">6.1.2</span> Objectives</h3>
+<div id="create-google-account" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Create Google Account</h3>
+<p>First, you will need to set up a (free) Google account.</p>
+<p>If you do not already have a Google account that you would like to use for accessing AnVIL, <a href="https://accounts.google.com/SignUp">create one now</a>.</p>
+<ul>
+<li>Alternatively, if you would like to create a Google account that is associated with an existing non-Gmail email address, you can follow <a href="https://support.terra.bio/hc/en-us/articles/360029186611">these instructions</a>.</li>
+</ul>
+</div>
+<div id="log-in-to-terra" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Log In to Terra</h3>
+<p>Next, make sure you can log in to Terra – you will use Terra to perform computations on AnVIL.</p>
+<p>You can access Terra by going to <a href="https://anvil.terra.bio/"><code>anvil.terra.bio</code></a>, or by clicking the link on the <a href="https://anvilproject.org/">AnVIL home page</a>.</p>
+<p><img src="07-student-guide_files/figure-html/1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gde7783227e_0_31.png" title="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." alt="Screenshot of the AnVIL home page. The button to &quot;launch Terra&quot; is highlighted." width="80%" style="display: block; margin: auto;" /></p>
+<p>Open Terra, and you should be prompted to sign in with your Google account.</p>
+</div>
+<div id="share-username" class="section level3" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Share Username</h3>
+<p>Finally, make sure your instructor has your Google account username (e.g. <code>myname@gmail.com</code>), so they can give you access to everything you need.</p>
+<ul>
+<li>Make sure there are no typos!</li>
+<li>If you have multiple Google accounts, make sure you give them the username that you will be using to access AnVIL</li>
+</ul>
+<div class="warning">
+<p>It is <em>very important</em> that you share the Google account you will be using to access AnVIL with with your instructor! Otherwise, the instructor cannot add you to Billing Projects or Workspaces, and you will be unable to proceed with your assignments.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="objectives" class="section level3" number="6.1.5">
+<h3><span class="header-section-number">6.1.5</span> Objectives</h3>
 <p>This activity will teach you how to use the AnVIL platform to:</p>
 <ol style="list-style-type: decimal">
 <li>Get started working on AnVIL</li>
@@ -192,27 +228,26 @@ At this point, it might make things easier to open up a new window in your brows
 </div>
 <p>After logging in, click “View Workspaces”. Select the “Public” tab. In the top search bar type the activity workspace “SARS-CoV-2-Genome”. You can also go directly to the following link: <a href="https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome" class="uri">https://anvil.terra.bio/#workspaces/gdscn-exercises/SARS-CoV-2-Genome</a>.</p>
 <p>Clone the workspace by clicking the teardrop button (<img src="resources/images/teardrop.png" id="id" class="class" width="25" height="20" alt="teardrop button" />). And selecting “Clone”.</p>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
-## &#39;rlang::check_dots_unnamed&#39; when loading &#39;tibble&#39;</code></pre>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
-## &#39;rlang::check_dots_used&#39; when loading &#39;tibble&#39;</code></pre>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
-## &#39;rlang::check_dots_empty&#39; when loading &#39;tibble&#39;</code></pre>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_unnamed&#39; by
-## &#39;rlang::check_dots_unnamed&#39; when loading &#39;pillar&#39;</code></pre>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_used&#39; by
-## &#39;rlang::check_dots_used&#39; when loading &#39;pillar&#39;</code></pre>
-<pre><code>## Warning: replacing previous import &#39;ellipsis::check_dots_empty&#39; by
-## &#39;rlang::check_dots_empty&#39; when loading &#39;pillar&#39;</code></pre>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_625.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_625.png" title="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." alt="Screenshot showing the teardrop button. The button has been clicked revealing the &quot;clone&quot; option. The Clone option and the teardrop button are highlighted." width="100%" /></p>
 <p>In the first box, give your Workspace clone a name by adding an underscore (“_”) and your name. For example, “SARS-CoV-2-Genome_Ava_Hoffman”. Next, select the Billing project provided by your instructor. Leave the bottom two boxes as-is and click “CLONE WORKSPACE”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_648.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_648.png" title="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." alt="Screenshot showing the &quot;clone a workspace&quot; popout. The Workspace name, Billing Project, and Clone Workspace button have been filled in and highlighted." width="100%" /></p>
 </div>
 <div id="starting-galaxy" class="section level3" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Starting Galaxy</h3>
 <p>Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis.</p>
-<p>In your new Workspace, click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="480" /></p>
+<p>In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="100%" /></p>
+<p>Click on “NEXT” and “CREATE” to keep all settings as-is.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_798.png" title="The CREATE button among cloud environments has been highlighted." alt="The CREATE button among cloud environments has been highlighted." width="100%" /></p>
+<p>Click on the Galaxy icon.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_31.png" title="The Galaxy icon appears if the environment has been successfully launched." alt="The Galaxy icon appears if the environment has been successfully launched." width="100%" /></p>
+<p>You will see that the environment is still being set up.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_38.png" title="The status of the cloud computing environment shows that it is still being set up." alt="The status of the cloud computing environment shows that it is still being set up." width="100%" /></p>
+<p>This will take 8-10 minutes. When it is done, click “Open”.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_46.png" title="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." alt="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." width="100%" /></p>
+<div class="notice">
+<p>Remember that you can refresh your browser or navigate away at any time. This is because the connection to the environment is in the cloud, not on your personal computer.</p>
+</div>
 <p>You can also follow along with the first ~2 minutes of <a href="https://jhudatascience.org/AnVIL_Book_Getting_Started/starting-galaxy.html">this video</a> to start Galaxy on AnVIL.</p>
 </div>
 <div id="navigating-galaxy" class="section level3" number="6.2.3">
@@ -221,7 +256,7 @@ At this point, it might make things easier to open up a new window in your brows
 <p><strong>Tools</strong> - These are all of the bioinformatics tool packages available for you to use.</p>
 <p><strong>The Main Dashboard</strong> - This contains flash messages and posts when you first open Galaxy, but when we are using data this is the main interface area.</p>
 <p><strong>History</strong> - When you start a project you will be able to see all of the documents in the project in the history. Now be aware, this can become very busy. Also the naming that Galaxy uses is not very intuitive, so you must make sure that you label your files with something that makes sense to you.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" title="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_816.png" title="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." alt="Screenshot of the Galaxy landing page. The Tools and History headings have been highlighted." width="100%" /></p>
 <p>On the welcome page, there are links to tutorials. You may try these out on your own. If you want to try a new analysis this is a good place to start.</p>
 </div>
 </div>
@@ -230,14 +265,14 @@ At this point, it might make things easier to open up a new window in your brows
 <p>Luckily, we linked to the original data when we cloned our Workspace! We have three files we will need for our activity. These are (1) the reference genome for SARS-CoV-2, and both forward (2) and reverse (3) reads for our sample. There are two sets of reads for our sample because the scientists who collected it used paired-end sequencing. The reference genome ends in “.fasta” because it has already been cleaned up by scientists. The sample we are looking at ends in <code>fastq</code> because it is raw data from the sequencer.</p>
 <ol style="list-style-type: decimal">
 <li><p>Click on “Upload Data” in the Tools pane.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="480" /></p></li>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="100%" /></p></li>
 <li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="100%" /></p></li>
 <li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="480" /></p></li>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="100%" /></p></li>
 <li><p>Click “Start” and once complete, you can click “Close”.</p></li>
 <li><p>Confirm your upload worked by looking at the file names in the History pane.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="480" /></p></li>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="100%" /></p></li>
 </ol>
 </div>
 <div id="examining-fastq" class="section level2" number="6.4">
@@ -246,7 +281,7 @@ At this point, it might make things easier to open up a new window in your brows
 <div id="examining-inputs" class="section level3" number="6.4.1">
 <h3><span class="header-section-number">6.4.1</span> Examining Inputs</h3>
 <p>Use your mouse and click on the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) of the first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>). In the Main screen you will see something like this:</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_41.png" title="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." alt="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_41.png" title="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." alt="Screnshot of a fastq file. The data includes DNA sequences but also includes many coded characters, making it hard to understand." width="100%" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
 <ol style="list-style-type: decimal">
@@ -260,15 +295,15 @@ At this point, it might make things easier to open up a new window in your brows
 <h3><span class="header-section-number">6.4.2</span> Quality Scoring</h3>
 <p>FastQC is a tool which aims to provide simple quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a set of analyses which you can use to get a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.</p>
 <p>Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control tool folder. You will see something like this in the tools:</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_0.png" title="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." alt="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_0.png" title="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." alt="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." width="100%" /></p>
 <p>In the first drop down menu, make sure it has your first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>) loaded. Leave everything else as-is and click on the blue execute button at the bottom of the screen.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_6.png" title="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." alt="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." width="480" />
-<img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png" title="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." alt="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_6.png" title="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." alt="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." width="100%" />
+<img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png" title="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." alt="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." width="100%" /></p>
 <p>The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error.</p>
 <p>Click on the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) in the new file in the history “FASTQC on data2 Webpage”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_18.png" title="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." alt="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_18.png" title="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." alt="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." width="100%" /></p>
 <p>You will open up a summary report for the sequencing file:</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_23.png" title="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." alt="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_23.png" title="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." alt="Screenshot of the FastQC results. The Basic Statistics and Per Base Sequence Quality sections for the report on VA_sample_forward_reads.fastq are visible." width="100%" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
 <ol start="4" style="list-style-type: decimal">
@@ -293,11 +328,11 @@ At this point, it might make things easier to open up a new window in your brows
 <strong>VA_sample_forward_reads.fastq</strong>
 <strong>VA_sample_reverse_reads.fastq</strong></p>
 <p>Now go to GENOMICS ANALYSIS: Mapping and select “Map with BWA-MEM”. This program will align your reads to your SARS reference genome. Some of our reads are &gt;100 base pairs so we will use the MEM option.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_33.png" title="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." alt="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_33.png" title="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." alt="Screenshot of the Tools pane in Galaxy. The &quot;Map with BWA-MEM&quot; link is highlighted." width="100%" /></p>
 <p>First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference <code>fasta</code> file that you uploaded as the reference.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_41.png" title="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." alt="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_41.png" title="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." alt="Screenshot of the BWA-MEM tool options. The &quot;Use a genome from history and build index&quot; is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted." width="100%" /></p>
 <p>Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files. Leave other options as-is. <em>You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the execute button</em>. Click execute.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_50.png" title="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_50.png" title="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to &quot;Paired&quot;), first set of reads (set to &quot;VA_sample_forward_reads.fastq&quot;), second set of reads (set to &quot;VA_sample_reverse_reads.fastq&quot;), and the &quot;Execute&quot; button." width="100%" /></p>
 <p>The output file is a <code>BAM</code> file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the <code>fastq</code> files). Instead you will use a genome viewer in the next step.</p>
 <div class="reflection">
 <p>QUESTIONS:</p>
@@ -311,26 +346,26 @@ At this point, it might make things easier to open up a new window in your brows
 <h2><span class="header-section-number">6.6</span> Exercise Four: Viewing aligned data</h2>
 <p>We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.</p>
 <p>Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select “JBrowse”. Under “Reference genome to display” ensure that “Use a genome from history” is selected. Below this, make sure that the <strong>SARS-CoV-2_reference_genome.fasta</strong> file is selected. Click “Execute”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_61.png" title="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_61.png" title="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." alt="Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to &quot;Use a genome from history&quot;), reference genome (set to &quot;SARS-CoV-2_reference_genome.fasta&quot;), and the &quot;Execute&quot; button." width="100%" /></p>
 <p>You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) to open JBrowse. You will need to click on the magnifying glasses to zoom in, but you should see the A,C,G, and Ts and their corresponding colors that make up the SARS-CoV-2 genome!</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_72.png" title="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." alt="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_72.png" title="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." alt="Screenshot of preliminary JBrowse results. The eye icon is highlighted, as it should be used to open the JBrowse viewer. The magnifying glasses in JBrowse are also highlighted as they enable zooming in to see the individual bases." width="100%" /></p>
 <p>This is interesting, but it doesn’t let us compare the genome to the sample we have. We suspect there may be some differences that indicate our sample is the delta variant. Go back to STATISTICS AND VISUALIZATION: Graph/Display Data and select “JBrowse”. Just like before, under “Reference genome to display”, ensure that “Use a genome from history” is selected. Below this, make sure that the <strong>SARS-CoV-2_reference_genome.fasta</strong> file is selected.</p>
 <p>This time, we’ll add our alignment data from <a href="student-activity-guide.html#alignment">Exercise Three</a>. Click the “+ Insert Track Group” button.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_83.png" title="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_83.png" title="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Track Group” button is highlighted." width="100%" /></p>
 <p>Click “+ Insert Annotation Track” to add our alignment data.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_92.png" title="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_92.png" title="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." alt="Screenshot of JBrowse options. The “+ Insert Annotation Track” button is highlighted." width="100%" /></p>
 <p>You’ll keep everything the same except the following:</p>
 <ul>
 <li><strong>Track Type</strong>: BAM Pileups</li>
 <li><strong>Autogenerate SNP Track</strong>: Yes</li>
 <li><strong>Maximum size of BAM chunks</strong>: Add one more zero: 50000000</li>
 </ul>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_99.png" title="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." alt="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_99.png" title="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." alt="Screenshot of JBrowse options. The following options are highlighted: Track type (set to &quot;BAM Pileups&quot;), Autogenerate SNP Track (set to &quot;Yes&quot;), and Maximum size of BAM chunks (set to 50000000)." width="100%" /></p>
 <p>These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”.</p>
 <p>You should see a new JBrowse item appear in your history. Click the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_20.png" title="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." alt="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_20.png" title="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." alt="Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked." width="100%" /></p>
 <p>Let’s look at an example mutation in our sample. Type in the reference position “24410” and click “Go”. You should see a bunch of “A”s highlighted in green throughout our sample. The reference sequence (top line) is a “G” but all of the reads are an “A”. This means that our sample is genetically different from the established SARS-CoV-2 reference genome! Researchers often call these single base differences “SNPs” - Single Nucleotide Polymorphisms.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_109.png" title="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." alt="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_109.png" title="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." alt="Screenshot of JBrowse viewer at base 24410 in the genome. The search bar has been highlighted and shows that 24410 has been entered. A SNP has been highlighted indicating a shift from G to A. The SNP is readily visible because it is a different color (green)." width="100%" /></p>
 <div class="reflection">
 <p>QUESTIONS:</p>
 <ol start="9" style="list-style-type: decimal">
@@ -341,18 +376,18 @@ At this point, it might make things easier to open up a new window in your brows
 <div class="dictionary">
 <p><strong>Breakout Box: Sequencing errors</strong></p>
 <p>It’s possible to make mistakes in the data preparation before we get to the data analysis. Sometimes this happens when the samples are being prepared in the lab and sometimes this happens because the sequencer makes a mistake. This is one reason why quality scores are helpful. With millions of reads of data, it’s more likely that we see a “SNP” that is actually an accident. Multiple copies of the same areas of our data (“read depth”) help us be sure it’s a real SNP. When we compare across lots of aligned reads of the same area, we can determine the actual sequence by consensus. For example, we can be reasonably confident that the “G” at position 1,203 shown below is just a sequencing or lab mistake.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_127.png" title="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." alt="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_127.png" title="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." alt="Screenshot of JBrowse viewer at base 1203 in the genome. A single base in a single read has been highlighted indicating a shift in that read to a G. This difference is not likely to represent the sample as a whole." width="100%" /></p>
 </div>
 </div>
 <div id="wrap-up" class="section level2" number="6.7">
 <h2><span class="header-section-number">6.7</span> Wrap-up</h2>
 <p>Once you are done with the activity, you’ll need to shut down your Galaxy cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.</p>
 <p>Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo:</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png" title="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png" title="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." alt="Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted." width="100%" /></p>
 <p>Next, click on “DELETE ENVIRONMENT OPTIONS”:</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png" title="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." alt="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png" title="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." alt="Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted." width="100%" /></p>
 <p>Finally, select “Delete everything, including persistent disk”. Make sure you are done with the activity and then click “DELETE”.</p>
-<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_146.png" title="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." width="480" /></p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_146.png" title="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." alt="Screenshot of the cloud environment pop out menu. The “Delete everything, including persistent disk” radio button has been checked and is highlighted. The “DELETE” button is highlighted." width="100%" /></p>
 
 </div>
 </div>
