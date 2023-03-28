@@ -8,7 +8,16 @@ Galaxy is a free, relatively easy to use bioinformatics implementation package. 
 
 ### Before You Start
 
-Make sure you have an AnVIL account (refer to https://jhudatascience.org/AnVIL_Book_Instructor_Guide/student-account-setup.html) 
+Make sure you have an AnVIL account.
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
 
 ### Objectives
 
