@@ -11,8 +11,8 @@ rmd_files: ["index.Rmd",
             "07-student-guide.Rmd",
             "08-answer-key.Rmd",
             "09-download.Rmd",
-            "10-help.Rmd"]
-            #"About.Rmd"]
+            "10-help.Rmd",
+            "About.Rmd"]
 new_session: yes
 bibliography: [book.bib]
 delete_merged_file: true
