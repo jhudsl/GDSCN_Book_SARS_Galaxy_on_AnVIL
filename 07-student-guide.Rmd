@@ -1,3 +1,9 @@
+
+```{r echo = FALSE}
+knitr::opts_chunk$set(out.width = "100%")
+```
+
+
 # Student Activity Guide
 
 This chapter contains the student instructions for the SARS-CoV-2 Variant Detection with Galaxy activity.
@@ -8,7 +14,16 @@ Galaxy is a free, relatively easy to use bioinformatics implementation package. 
 
 ### Before You Start
 
-Make sure you have an AnVIL account (refer to https://jhudatascience.org/AnVIL_Book_Instructor_Guide/student-account-setup.html) 
+Make sure you have an AnVIL account.
+
+:::: {.borrowed_chunk}
+```{r, echo = FALSE, results='asis'}
+cow::borrow_chapter(
+  doc_path = "child/_child_student_create_account.Rmd",
+  repo_name = "jhudsl/AnVIL_Template"
+)
+```
+::::
 
 ### Objectives
 
@@ -56,11 +71,39 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
 
-In your new Workspace, click on the “NOTEBOOKS” tab. Next, click on “Create a Cloud Environment for Galaxy”. You should see a popup window on the right side of the screen. Click on “NEXT” and “CREATE” to keep all settings as-is. This will take 8-10 minutes. When it is done, click “LAUNCH GALAXY”.
+In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted,'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_788")
 ```
+
+Click on “NEXT” and “CREATE” to keep all settings as-is.
+
+```{r, echo=FALSE, fig.alt='The CREATE button among cloud environments has been highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_798")
+```
+
+Click on the Galaxy icon. 
+
+```{r, echo=FALSE, fig.alt='The Galaxy icon appears if the environment has been successfully launched.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_31")
+```
+
+You will see that the environment is still being set up.
+
+```{r, echo=FALSE, fig.alt='The status of the cloud computing environment shows that it is still being set up.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_38")
+```
+
+This will take 8-10 minutes. When it is done, click “Open”.
+
+```{r, echo=FALSE, fig.alt='The Provisioning status text has changed to "Launch Galaxy" indicating the cloud environment is ready to use.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_46")
+```
+
+:::{.notice}
+Remember that you can refresh your browser or navigate away at any time. This is because the connection to the environment is in the cloud, not on your personal computer.
+:::
 
 You can also follow along with the first ~2 minutes of [this video](https://jhudatascience.org/AnVIL_Book_Getting_Started/starting-galaxy.html) to start Galaxy on AnVIL.
 
