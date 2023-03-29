@@ -40,7 +40,7 @@
 | [Logging into AnVIL](student-activity-guide#set-up), [Provisioning Galaxy workspace](student-activity-guide#starting-galaxy) | 10-15 minutes | 10-15 minutes | _Provisioning will take 8-10 minutes of waiting_ |
 | [Overview lecture](student-activity-guide#overview-video) | 15 minutes | 15 minutes | 
 | [Exercise 1: Uploading data](student-activity-guide#importing-data) | 10 minutes | 5 minutes |
-| [Exercise 2: Examining fastQ files](student-activity-guide#examining-fastq) | 30 minutes | 10 minutes |
+| [Exercise 2: Examining FASTQ files](student-activity-guide#examining-fastq) | 30 minutes | 10 minutes |
 | [Exercise 3: Aligning data](student-activity-guide#alignment) | 30 minutes | 10 minutes |
 | [Exercise 4: Viewing alignments](student-activity-guide#view-alignment) | 30 minutes | 10 minutes |
 | [Wrap-up](student-activity-guide#wrap-up) | 5-10 minutes | 5 minutes |

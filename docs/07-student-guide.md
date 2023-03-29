@@ -203,10 +203,9 @@ Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control too
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_0.png){width=100%}
 
-In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue "Run Tool" button at the bottom of the screen. 
+In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue "Run Tool" button. 
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_6.png){width=100%}
-![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png){width=100%}
 
 The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error. 
 
@@ -244,21 +243,26 @@ Using this formula, we can calculate that a quality score of 40 means only 0.000
 
 _Given that our data has passed some quality checks, we will try to align the data to the reference genome. In this case it is simple, a viral genome. A human sequencing project will generate much larger data sets. There are many aligners, but we will start off looking at a simple aligner BWA-MEM. This example uses paired data._ 
 
-We will use our two SARs data files, which are ready for alignment.
-**VA_sample_forward_reads.fastq**
-**VA_sample_reverse_reads.fastq**
+We will use our two SARS data files, which are ready for alignment.
 
-Now go to GENOMICS ANALYSIS: Mapping and select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
+- **VA_sample_forward_reads.fastq**
+- **VA_sample_reverse_reads.fastq**
+
+Go to GENOMICS ANALYSIS and expand the Mapping menu. Select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_33.png){width=100%}
 
-First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference `fasta` file that you uploaded as the reference. 
+First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference `fasta` file that you uploaded as the reference earlier. 
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_41.png){width=100%}
 
-Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files. Leave other options as-is. _You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the execute button_. Click execute.
+Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files.
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_50.png){width=100%}
+
+Leave other options as-is. _You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the Run Tool button_. Click "Run Tool".
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_46.png){width=100%}
 
 The output file is a `BAM` file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
 
@@ -272,9 +276,13 @@ QUESTIONS:
 
 ## Exercise Four: Viewing aligned data {#view-alignment}
 
-We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.
+We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use [JBrowse](https://jbrowse.org/jb2/) to view the data.
 
-Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Execute”. 
+Scroll down in the Tools menu to STATISTICS AND VISUALIZATION. Under "Graph/Display Data", select "JBrowse". 
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_56.png){width=100%}
+
+Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Run Tool”. 
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_61.png){width=100%}
 
@@ -300,9 +308,9 @@ You’ll keep everything the same except the following:
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_99.png){width=100%}
 
-These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”. 
+These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Run Tool”. 
 
-You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.
+You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. The tracks will show up in the order that you click on them.
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gfa95c9e4ef_0_20.png){width=100%}
 
@@ -326,6 +334,20 @@ It’s possible to make mistakes in the data preparation before we get to the da
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_127.png){width=100%}
 :::
 
+## Export Your History
+
+It’s a good idea to export your “History” so that your collaborators can see what you did. Click on the History Menu and click on “Export History to File”.
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_81.png){width=100%}
+
+Make sure you select “to a remote file”. Then, click to select where to export your History. On the popup menu, select your Workspace name, then select “Other Data”. Finally, select “Files”. Then click “Select this folder”. Make sure the export directory looks correct. Next, name your history “SARS Galaxy Variant Detection” and click “Export”.
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_98.png){width=100%}
+
+Back at your Workspace, click on the “Data” tab, and the Files folder. You should now see the History export in your files. If you click on the file, you can download it or view it in Google Cloud Storage Browser.
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_107.png){width=100%}
+
 ## Wrap-up
 
 Once you are done with the activity, you’ll need to shut down your Galaxy cloud environment. This frees up the cloud resources for others and minimizes computing cost. The following steps will delete your work, so make sure you are completely finished at this point. Otherwise, you will have to repeat your work from the previous steps.
@@ -334,7 +356,11 @@ Return to AnVIL, and find the Galaxy logo that shows your cloud environment is r
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_134.png){width=100%}
 
-Next, click on “DELETE ENVIRONMENT OPTIONS”:
+Click "Settings".
+
+![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2104e1fbf2b_0_124.png){width=100%}
+
+Next, scroll down and click on “DELETE ENVIRONMENT”:
 
 ![](07-student-guide_files/figure-docx//182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_140.png){width=100%}
 
