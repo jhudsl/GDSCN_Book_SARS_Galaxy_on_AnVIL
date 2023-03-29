@@ -71,7 +71,11 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinns
 
 Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis. 
 
-In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed. 
+:::{.warning}
+Currently, you will need to use Chrome or Safari as your browser for Galaxy cloud environments to work.
+:::
+
+In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted,'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_788")
@@ -95,7 +99,7 @@ You will see that the environment is still being set up.
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_38")
 ```
 
-This will take 8-10 minutes. When it is done, click “Open”.
+This will take 8-10 minutes. When it is done, click “Open”. You might need to refresh the page.
 
 ```{r, echo=FALSE, fig.alt='The Provisioning status text has changed to "Launch Galaxy" indicating the cloud environment is ready to use.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2283b458fae_100_46")
@@ -133,19 +137,23 @@ Luckily, we linked to the original data when we cloned our Workspace! We have th
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_830")
 ```
 
-2. Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.
+2. Click on “Choose remote files” at the bottom of the popup. Double-click the Workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “Ok”.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The "OK" button has been highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_849")
 ```
 
-3. Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample `fastq` files so that they are highlighted in green and click “OK”.
+3. Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the Workspace folder, then “Tables/” then “samples/”. Click the two sample `fastq` files so that they are highlighted in green and click “OK”.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The "OK" button has been highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gef82e74360_0_13")
 ```
 
 4. Click “Start” and once complete, you can click “Close”. 
+
+    ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. All three files are ready to be imported.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_855")
+```
 
 5. Confirm your upload worked by looking at the file names in the History pane.
 
@@ -185,12 +193,12 @@ Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control too
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_0")
 ```
 
-In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue execute button at the bottom of the screen. 
+In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue "Run Tool" button at the bottom of the screen. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_6")
 ```
-```{r, echo=FALSE, fig.alt='Screenshot of the FastQC option pane. The "Execute" button has been highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the FastQC option pane. The "Run Tool" button has been highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_12")
 ```
 
