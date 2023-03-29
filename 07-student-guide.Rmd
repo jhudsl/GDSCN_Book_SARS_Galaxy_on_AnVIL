@@ -242,26 +242,33 @@ Using this formula, we can calculate that a quality score of 40 means only 0.000
 
 _Given that our data has passed some quality checks, we will try to align the data to the reference genome. In this case it is simple, a viral genome. A human sequencing project will generate much larger data sets. There are many aligners, but we will start off looking at a simple aligner BWA-MEM. This example uses paired data._ 
 
-We will use our two SARs data files, which are ready for alignment.
-**VA_sample_forward_reads.fastq**
-**VA_sample_reverse_reads.fastq**
+We will use our two SARS data files, which are ready for alignment.
 
-Now go to GENOMICS ANALYSIS: Mapping and select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
+- **VA_sample_forward_reads.fastq**
+- **VA_sample_reverse_reads.fastq**
+
+Go to GENOMICS ANALYSIS and expand the Mapping menu. Select "Map with BWA-MEM". This program will align your reads to your SARS reference genome. Some of our reads are >100 base pairs so we will use the MEM option. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the Tools pane in Galaxy. The "Map with BWA-MEM" link is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_33")
 ```
 
-First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference `fasta` file that you uploaded as the reference. 
+First, choose your reference. In the first drop down box change it to “Use a genome from history and build index”. Then choose the SARS reference `fasta` file that you uploaded as the reference earlier. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The "Use a genome from history and build index" is selected and the reference fasta file has been selected from the drop down menu. Both of these are highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_41")
 ```
 
-Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files. Leave other options as-is. _You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the execute button_. Click execute.
+Under the “Single or Paired-end reads” ensure the “Paired” option is selected. Now choose your forward and reverse fastq files.
 
-```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to "Paired"), first set of reads (set to "VA_sample_forward_reads.fastq"), second set of reads (set to "VA_sample_reverse_reads.fastq"), and the "Execute" button.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The following selections are highlighted: choice of single or paired-end reads (set to "Paired"), first set of reads (set to "VA_sample_forward_reads.fastq"), and second set of reads (set to "VA_sample_reverse_reads.fastq")'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_50")
+```
+
+Leave other options as-is. _You can learn more about what the alignment software BWA-MEM is doing if you scroll down below the Run Tool button_. Click "Run Tool".
+
+```{r, echo=FALSE, fig.alt='Screenshot of the BWA-MEM tool options. The "Run Tool" button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_46")
 ```
 
 The output file is a `BAM` file, which lists where each read aligns to the reference genome and whether there are any differences. You can click the eye button to preview the results, but the results are not easy to interpret visually (much like the `fastq` files). Instead you will use a genome viewer in the next step.
@@ -276,9 +283,15 @@ QUESTIONS:
 
 ## Exercise Four: Viewing aligned data {#view-alignment}
 
-We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use JBrowse to view the data.
+We have aligned our data but it is currently a table of where the reads align. This is hard to read, so we will use [JBrowse](https://jbrowse.org/jb2/) to view the data.
 
-Go to STATISTICS AND VISUALIZATION: Graph/Display Data and select "JBrowse". Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Execute”. 
+Scroll down in the Tools menu to STATISTICS AND VISUALIZATION. Under "Graph/Display Data", select "JBrowse". 
+
+```{r, echo=FALSE, fig.alt='The Graph / Display Data menu needs to be expanded to find the JBrowse Tool. These menu items are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_56")
+```
+
+Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Execute”. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to "Use a genome from history"), reference genome (set to "SARS-CoV-2_reference_genome.fasta"), and the "Execute" button.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_61")
