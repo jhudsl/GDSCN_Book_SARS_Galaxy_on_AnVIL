@@ -10,6 +10,6 @@ This overview video introduces the lab activity. It briefly reviews some of the 
 1. Review big steps in the analysis
 1. Cover the setup on AnVIL in detail
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rYakA0oxq9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/D-bkZRA2TQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can view and download the Google Slides [here](https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit?usp=sharing).
