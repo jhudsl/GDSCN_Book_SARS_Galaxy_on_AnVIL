@@ -291,9 +291,9 @@ Scroll down in the Tools menu to STATISTICS AND VISUALIZATION. Under "Graph/Disp
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_56")
 ```
 
-Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Execute”. 
+Under "Reference genome to display" ensure that “Use a genome from history” is selected. Below this, make sure that the **SARS-CoV-2_reference_genome.fasta** file is selected. Click “Run Tool”. 
 
-```{r, echo=FALSE, fig.alt='Screenshot of the JBrowse options in Galaxy. The JBrowse menu link is highlighted in the Tools pane. The following have also been highlighted: reference genome to display option (set to "Use a genome from history"), reference genome (set to "SARS-CoV-2_reference_genome.fasta"), and the "Execute" button.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the JBrowse options in Galaxy. The following have been highlighted: reference genome to display option (set to "Use a genome from history"), reference genome (set to "SARS-CoV-2_reference_genome.fasta"), and the "Run Tool" button.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_61")
 ```
 
@@ -327,9 +327,9 @@ You’ll keep everything the same except the following:
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_99")
 ```
 
-These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Execute”. 
+These arguments tell JBrowse what kind of data we are using, as well as some memory options. Click “Run Tool”. 
 
-You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. Note that the tracks show up in the order that you click on them.
+You should see a new JBrowse item appear in your history. Click the eye icon (![eye button image](resources/images/eye.png){#id .class width=25 height=20px}) to open JBrowse. Make sure that all boxes are checked on the left side: “Available Tracks”. The tracks will show up in the order that you click on them.
 
 ```{r, echo=FALSE, fig.alt='Screenshot of JBrowse viewer. The Available Tracks sidebar is shown, with both sample data boxes checked.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gfa95c9e4ef_0_20")
@@ -358,6 +358,26 @@ It’s possible to make mistakes in the data preparation before we get to the da
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_127")
 ```
 :::
+
+## Export Your History
+
+It’s a good idea to export your “History” so that your collaborators can see what you did. Click on the History Menu and click on “Export History to File”.
+
+```{r, echo=FALSE, fig.alt='History dropdown menu button and Export History to File buttons are highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_81")
+```
+
+Make sure you select “to a remote file”. Then, click to select where to export your History. On the popup menu, select your Workspace name, then select “Other Data”. Finally, select “Files”. Then click “Select this folder”. Make sure the export directory looks correct. Next, name your history “SARS Galaxy Variant Detection” and click “Export”.
+
+```{r, echo=FALSE, fig.alt='When exporting History, make sure you select "to a remote file". The directory should be your workspace name followed by Other Data and Files. The export button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_98")
+```
+
+Back at your Workspace, click on the “Data” tab, and the Files folder. You should now see the History export in your files. If you click on the file, you can download it or view it in Google Cloud Storage Browser.
+
+```{r, echo=FALSE, fig.alt='Back on AnVIL, the Data tab and Files folder are selected. A file called SARS_Galaxy_Variant_Detection is now present.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_107")
+```
 
 ## Wrap-up
 
