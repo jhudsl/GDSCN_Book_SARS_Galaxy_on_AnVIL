@@ -193,13 +193,10 @@ Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control too
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_0")
 ```
 
-In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue "Run Tool" button at the bottom of the screen. 
+In the first drop down menu, make sure it has your first `fastq` file (**VA_sample_forward_reads.fastq**) loaded. Leave everything else as-is and click on the blue "Run Tool" button. 
 
 ```{r, echo=FALSE, fig.alt='Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_6")
-```
-```{r, echo=FALSE, fig.alt='Screenshot of the FastQC option pane. The "Run Tool" button has been highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_12")
 ```
 
 The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error. 
