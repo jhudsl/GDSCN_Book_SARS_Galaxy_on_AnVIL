@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2023-03-28" />
+<meta name="date" content="2023-03-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -235,6 +235,9 @@ At this point, it might make things easier to open up a new window in your brows
 <div id="starting-galaxy" class="section level3" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Starting Galaxy</h3>
 <p>Galaxy is a great tool for performing bioinformatics analysis without having to update software or worry too much about coding. In order to use Galaxy, we need to create a cloud environment. This is like quickly renting a few computers from Google as the engine to power our Galaxy analysis.</p>
+<div class="warning">
+<p>Currently, you will need to use Chrome or Safari as your browser for Galaxy cloud environments to work.</p>
+</div>
 <p>In your new Workspace, click on the “ANALYSES” tab. Next, click on “START”. You should see a popup window on the right side of the screen. Click on the Galaxy logo to proceed.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_788.png" title="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," alt="Screenshot of the Workspace Notebooks tab. The notebook tab name and the plus button that starts a cloud environment for Galaxy have been highlighted," width="100%" /></p>
 <p>Click on “NEXT” and “CREATE” to keep all settings as-is.</p>
@@ -243,7 +246,7 @@ At this point, it might make things easier to open up a new window in your brows
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_31.png" title="The Galaxy icon appears if the environment has been successfully launched." alt="The Galaxy icon appears if the environment has been successfully launched." width="100%" /></p>
 <p>You will see that the environment is still being set up.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_38.png" title="The status of the cloud computing environment shows that it is still being set up." alt="The status of the cloud computing environment shows that it is still being set up." width="100%" /></p>
-<p>This will take 8-10 minutes. When it is done, click “Open”.</p>
+<p>This will take 8-10 minutes. When it is done, click “Open”. You might need to refresh the page.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_g2283b458fae_100_46.png" title="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." alt="The Provisioning status text has changed to &quot;Launch Galaxy&quot; indicating the cloud environment is ready to use." width="100%" /></p>
 <div class="notice">
 <p>Remember that you can refresh your browser or navigate away at any time. This is because the connection to the environment is in the cloud, not on your personal computer.</p>
@@ -266,11 +269,12 @@ At this point, it might make things easier to open up a new window in your brows
 <ol style="list-style-type: decimal">
 <li><p>Click on “Upload Data” in the Tools pane.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_830.png" title="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." alt="Screenshot of the Galaxy homepage. The Upload Data link has been highlighted." width="100%" /></p></li>
-<li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “OK”.</p>
+<li><p>Click on “Choose remote files” at the bottom of the popup. Double-click the Workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “Ok”.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_849.png" title="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The &quot;OK&quot; button has been highlighted." width="100%" /></p></li>
-<li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
+<li><p>Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the Workspace folder, then “Tables/” then “samples/”. Click the two sample <code>fastq</code> files so that they are highlighted in green and click “OK”.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gef82e74360_0_13.png" title="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." alt="Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The &quot;OK&quot; button has been highlighted." width="100%" /></p></li>
-<li><p>Click “Start” and once complete, you can click “Close”.</p></li>
+<li><p>Click “Start” and once complete, you can click “Close”.</p>
+<p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_855.png" title="Screenshot of the Galaxy Data upload page. All three files are ready to be imported." alt="Screenshot of the Galaxy Data upload page. All three files are ready to be imported." width="100%" /></p></li>
 <li><p>Confirm your upload worked by looking at the file names in the History pane.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_ged15532ded_0_861.png" title="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." alt="Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted." width="100%" /></p></li>
 </ol>
@@ -296,9 +300,9 @@ At this point, it might make things easier to open up a new window in your brows
 <p>FastQC is a tool which aims to provide simple quality control checks on raw sequence data coming from high throughput sequencing pipelines. It provides a set of analyses which you can use to get a quick impression of whether your data has any problems of which you should be aware before doing any further analysis.</p>
 <p>Find the FastQC tool in the GENOMIC FILE MANIPULATION: FASTQ Quality Control tool folder. You will see something like this in the tools:</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_0.png" title="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." alt="Screenshot of the Galaxy Tools pane, where FASTQ Quality Control and FastQC Read Quality Reports links are highlighted." width="100%" /></p>
-<p>In the first drop down menu, make sure it has your first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>) loaded. Leave everything else as-is and click on the blue execute button at the bottom of the screen.</p>
+<p>In the first drop down menu, make sure it has your first <code>fastq</code> file (<strong>VA_sample_forward_reads.fastq</strong>) loaded. Leave everything else as-is and click on the blue “Run Tool” button at the bottom of the screen.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_6.png" title="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." alt="Screenshot of the FastQC option pane. VA_sample_forward_reads.fastq has been selected in the dropdown menu for read data." width="100%" />
-<img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png" title="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." alt="Screenshot of the FastQC option pane. The &quot;Execute&quot; button has been highlighted." width="100%" /></p>
+<img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_12.png" title="Screenshot of the FastQC option pane. The &quot;Run Tool&quot; button has been highlighted." alt="Screenshot of the FastQC option pane. The &quot;Run Tool&quot; button has been highlighted." width="100%" /></p>
 <p>The main dash will highlight in green if everything is okay. In the history, you will see the new files turn yellow, then green. If the job fails it will show an error.</p>
 <p>Click on the eye icon (<img src="resources/images/eye.png" id="id" class="class" width="25" height="20" alt="eye button image" />) in the new file in the history “FASTQC on data2 Webpage”.</p>
 <p><img src="07-student-guide_files/figure-html/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I_gf243efded1_0_18.png" title="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." alt="Screenshot of the Galaxy history pane. The eye icon beside the FastQC results data is highlighted." width="100%" /></p>
