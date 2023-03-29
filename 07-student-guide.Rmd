@@ -382,13 +382,19 @@ Once you are done with the activity, you’ll need to shut down your Galaxy clou
 
 Return to AnVIL, and find the Galaxy logo that shows your cloud environment is running. Click on this logo:
 
-```{r, echo=FALSE, fig.alt='Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the top right of the page is highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the Workspace menu. The currently running Galaxy cloud environment logo on the right of the page is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_134")
 ```
 
-Next, click on “DELETE ENVIRONMENT OPTIONS”:
+Click "Settings".
 
-```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT OPTIONS” link is highlighted.'}
+```{r, echo=FALSE, fig.alt='Screenshot of the Environment details menu. The Settings button is highlighted.'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.g2104e1fbf2b_0_124")
+```
+
+Next, scroll down and click on “DELETE ENVIRONMENT”:
+
+```{r, echo=FALSE, fig.alt='Screenshot of the cloud environment pop out menu. The “DELETE ENVIRONMENT” button is highlighted.'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gf243efded1_0_140")
 ```
 
