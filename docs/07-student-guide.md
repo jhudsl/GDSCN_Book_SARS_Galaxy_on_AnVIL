@@ -17,10 +17,6 @@ Make sure you have an AnVIL account.
 :::: {.borrowed_chunk}
 
 ```
-## Warning: Chunk option fig.align is not supported for docx output
-```
-
-```
 ## Warning: Chunk option fig.alt is not supported for docx output
 ```
 
@@ -49,7 +45,7 @@ Next, make sure you can log in to Terra -- you will use Terra to perform computa
 You can access Terra by going to [`anvil.terra.bio`](https://anvil.terra.bio/), or by clicking the link on the [AnVIL home page](https://anvilproject.org/).
 
 
-![](07-student-guide_files/figure-docx//1tyt8ifxD3y7QW3nN27jh02aPrBvNEo1GN_u2Ne_UngM_gde7783227e_0_31.png){width=80%}
+![](07-student-guide_files/figure-docx//1-PVlDAzmDncjcCHIy9ZyR3ROyPpfjrg46LhEQopDc1Q_g22c9add987a_0_5.png){width=100%}
 
 Open Terra, and you should be prompted to sign in with your Google account.
 
