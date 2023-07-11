@@ -51,6 +51,13 @@ Depending on your needs, you might decide to run this Galaxy activity on a diffe
 
 We estimate a cost of roughly $2.00 per student to run this activity on AnVIL.
 
+<div class = "notice">
+This activitiy is now also part of the Galaxy Training Network (GTN)!
+
+Check it out here:  
+https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/sars-with-galaxy-on-anvil/tutorial.html
+</div>
+
 ## Getting Credit for Professional Development {-}
 
 We are happy to provide a letter to your supervisor, department head, or dean to indicate you've worked through this content and intend to use it in your class. You can [request a letter here](https://forms.gle/Ar542ZEwLnSRbrZN9).
