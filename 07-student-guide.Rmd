@@ -134,32 +134,32 @@ Luckily, we linked to the original data when we cloned our Workspace! We have th
 1. Click on “Upload Data” in the Tools pane.  
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. The Upload Data link has been highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_830")
-```
+    ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_830")
+    ```
 
 2. Click on “Choose remote files” at the bottom of the popup. Double-click the Workspace folder, then “Tables/” then “reference/”. Click the reference .fasta file so that it is highlighted in green and click “Ok”.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. The reference genome fasta file is highlighted in green. The "OK" button has been highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_849")
-```
+    ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_849")
+    ```
 
 3. Now that your reference has been added, click “Choose remote files” again to add the two sample files. Double-click the Workspace folder, then “Tables/” then “samples/”. Click the two sample `fastq` files so that they are highlighted in green and click “OK”.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. The sample files, including forward and reverse read files, are highlighted in green. The "OK" button has been highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gef82e74360_0_13")
-```
+    ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.gef82e74360_0_13")
+    ```
 
 4. Click “Start” and once complete, you can click “Close”. 
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy Data upload page. All three files are ready to be imported.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_855")
-```
+    ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_855")
+    ```
 
 5. Confirm your upload worked by looking at the file names in the History pane.
 
     ```{r, echo=FALSE, fig.alt='Screenshot of the Galaxy homepage. The successfully uploaded files are boxed in green color and have been highlighted.'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_861")
-```
+    ottrpal::include_slide("https://docs.google.com/presentation/d/182AOzMaiyrreinnsRX2VhH7YsVgvAp4xtIB_7Mzmk6I/edit#slide=id.ged15532ded_0_861")
+    ```
 
 ## Exercise Two: Examining `fastq` Files in Galaxy {#examining-fastq}
 
