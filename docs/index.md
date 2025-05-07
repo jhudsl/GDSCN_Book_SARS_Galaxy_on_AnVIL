@@ -1,6 +1,6 @@
 ---
 title: "GDSCN Book: SARS with Galaxy on AnVIL"
-date: "April 28, 2025"
+date: "May 07, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -52,4 +52,5 @@ This exercise is part of a collection of teaching resources developed through th
 Please check out our full collection of AnVIL and related resources: https://hutchdatascience.org/AnVIL_Collection/
 
 <note>
+
 
